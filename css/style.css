@@ -77,11 +77,15 @@ footer h4{
 	transition: all 0.3s ease 0s;
 }
 
-/* Media Query - Large desktops and medias with min with 1152px */
+/* Media Query - Large desktops and medias with min with 1920px */
 @media (min-width:1920px ) {
    .social-links img { 
       margin-right: 1.2rem;
       margin-top: 1rem;
+   }
+
+   .social-links img:hover {
+      transform: scale(1.2);
    }
 
    .footer {
@@ -90,11 +94,24 @@ footer h4{
    }
 
    footer img {
-      height: 2.8rem;
+      height: 2.850625rem;
+   }
+
+   footer a {
+      font-size: 1.125rem;
+   }
+   
+   footer p {
+      font-size: 0.875rem;
+      margin-top: 1rem;
+   }
+
+   footer h4{ 
+      font-size: 1.5rem;
    }
 }
 
-/* Media Query - medium desktops and medias with min with 1152px */
+/* Media Query - medium desktops and medias with min with 1440px */
 @media (min-width:1440px) and (max-width: 1919px) {
    .social-links img { 
       margin-right: 0.4rem;
