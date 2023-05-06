@@ -6,11 +6,13 @@
 Ajuste para visualizar o header.
 
 
-html {
-  background-color: black;
-} 
+
 
 */
+
+html {
+  background-color: black;
+}
 
 :root {
   --primary-color: #ff7757;
@@ -127,4 +129,123 @@ header div .button:hover {
   header {
     padding: 40px 182px;
   }
+}
+
+.menu {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.menu.opened {
+  animation: swipeDown 0.3s ease-in-out;
+  display: flex;
+  top: 0;
+}
+
+@keyframes swipeDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.menu header {
+  align-items: center;
+  background-image: url(../assets/img/Hero\ Section.png);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+}
+
+.menu nav a {
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.menu nav a img {
+  opacity: 0;
+  width: 40px;
+}
+
+.menu nav a:hover {
+  filter: saturate(1.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu nav a:hover > img {
+  animation: slideRight 0.15s ease-in-out forwards;
+  opacity: 1;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.menu nav a.active {
+  font-weight: 500;
+}
+
+.menu nav hr {
+  border: 1px solid #ffffff;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.menu div {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.menu > hr {
+  border: 1px solid #ffffff;
+  margin: 20px 0;
+  opacity: 0.5;
+  width: 60%;
+}
+
+.menu div a {
+  background: #ffffff;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: 500;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.menu div a:hover {
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
 }
