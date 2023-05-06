@@ -2,4 +2,301 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* CSS colors */
+:root {
+   --white: #FFFFFF;
+   --gray-300: #767E86;
+   --orange-500: #FF7757;
+   --orange-100: #FFD2C7;
 
+   --yellow-100: #FFE8D4;
+
+   --brown-900: #61291C;
+   --brown-1000: #331811;
+
+   --blue-900: #172432;
+}
+
+/* This is the Restart CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Start of footer styling */
+
+.container{
+	max-width: 97.25rem;
+}
+
+footer a {
+   text-decoration: none;
+   font-size: 1.125rem;
+   color: var(--white);
+   font-weight: 300;
+}
+
+footer p {
+   font-size: 0.875rem;
+}
+
+footer li {
+   list-style: none;
+   color: var(--white);
+}
+
+footer ul {
+   margin: 0;
+   padding: 0;
+   margin-top: 1rem;
+}
+
+footer h4{ 
+   font-size: 1.5rem;
+}
+
+.footer {
+   background-color: var(--blue-900);
+   color: var(--white);
+}
+
+.footer .row {
+   display: flex;
+}
+
+.social-links img {
+   height: 2rem;
+   width: 2rem;
+}
+
+.footer-col ul li a:hover{
+	padding-left: 8px;
+   color: #e0dfdf;
+	transition: all 0.3s ease 0s;
+}
+
+/* Media Query - Large desktops and medias with min with 1152px */
+@media (min-width:1920px ) {
+   .social-links img { 
+      margin-right: 1.2rem;
+      margin-top: 1rem;
+   }
+
+   .footer {
+      padding: 15rem 11.375rem 8.75rem 11.375rem; /*top, right, bottom, left*/
+      height: 36rem;
+   }
+
+   footer img {
+      height: 2.8rem;
+   }
+}
+
+/* Media Query - medium desktops and medias with min with 1152px */
+@media (min-width:1440px) and (max-width: 1919px) {
+   .social-links img { 
+      margin-right: 0.4rem;
+      margin-top: 1rem;
+
+      height: 1.9rem;
+      width: 1.9rem;
+   }
+
+   .footer {
+      padding: 15rem 8.75rem 2rem 8.75rem; /*top, right, bottom, left*/
+      height: 36rem;
+   }
+
+   .footer .row {
+      display: flex;
+   }
+
+   footer a {
+      font-size: 1.125rem;
+   }
+   
+   footer p {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+   }
+
+   footer h4{ 
+      font-size: 1.5rem;
+   }
+   
+   footer img {
+      height: 3.2 rem;
+   }
+
+   .footer-col:nth-child(2) {
+      margin-left: 5rem;
+   }
+}
+
+/* Media Query - small desktops and medias with min with 1152px */
+@media (min-width:1152px) and (max-width: 1439px) {
+   footer a {
+      font-size: 1.020rem;
+   }
+   
+   footer p {
+      font-size: 0.770rem;
+      margin-top: 1rem;
+   }
+
+   footer h4{ 
+      font-size: 1.3rem;
+   }
+   
+   footer img {
+      height: 2.75rem;
+   }
+
+   .footer {
+      padding: 15rem 2rem 2rem 2rem; /*top, right, bottom, left*/
+      height: 36rem;
+   }
+
+   .footer .row {
+      display: flex;
+   }
+
+   .social-links img { 
+      margin-right: 0.4rem;
+      margin-top: 1rem;
+
+      height: 1.8rem;
+      width: 1.8rem;
+   }
+
+   .footer-col:nth-child(2) {
+      margin-left: 5rem;
+   }
+}
+
+/* Media Query - Tablets and medias with min with 768px */
+@media (min-width:768px) and (max-width: 1151px) {
+   .social-links img { 
+      margin-right: 1.535rem;
+      margin-top: 1rem;
+
+      height: 1.935625rem;
+      width: 1.935625rem;
+   }
+
+   .footer {
+      padding: 5.25rem 1.4rem 8.75rem 1.4rem; /*top, right, bottom, left*/
+   }
+
+   footer a {
+      font-size: 1.125rem;
+   }
+   
+   footer p {
+      font-size: 0.875rem;
+   }
+
+   footer h4{ 
+      font-size: 1.5rem;
+   }
+   
+   footer img {
+      height: 2.85rem;
+      margin-bottom: 1rem;
+   }
+   
+   .footer .row {
+      display: block;
+   }
+
+   .footer-col {
+      margin-top: 3.75rem;
+   }
+   
+   .social-links img {
+      height: 2rem;
+      width: 2rem;
+   }
+}
+
+/* Media Query - Smartphones and medias with min with 320px */
+@media (min-width: 320px) and (max-width: 767px) {
+   footer a {
+      font-size: 1.125rem;
+   }
+   
+   footer p {
+      font-size: 0.875rem;
+   }
+
+   footer h4{ 
+      font-size: 1.5rem;
+   }
+   
+   footer img {
+      height: 2.85rem;
+      margin-bottom: 1rem;
+   }
+
+   .footer {
+      padding: 5rem 1rem 5rem 1rem; /*top, right, bottom, left*/
+   }
+
+   .footer .row {
+      display: block;
+   }
+
+   .footer-col {
+      margin-top: 3.75rem;
+   }
+   
+   .social-links img { 
+      margin-top: 1rem;
+      margin-right: 1.535rem;
+
+      height: 2rem;
+      width: 2rem;
+   }
+}
+
+/* Media Query - Galaxy Fold and medias with min with 220px */
+@media (min-width: 220px) and (max-width: 319px){
+   footer a {
+      font-size: 1.125rem;
+   }
+   
+   footer p {
+      font-size: 0.8rem;
+   }
+
+   footer h4{ 
+      font-size: 1.5rem;
+   }
+   
+   footer img {
+      height: 2.5rem;
+      margin-bottom: 1rem;
+   }
+
+   .footer {
+      padding: 1rem 1rem 5rem 1rem; /*top, right, bottom, left*/
+   }
+   
+   .footer .row {
+      display: block;
+   }
+
+   .footer-col {
+      margin-top: 3.75rem;
+   }
+      
+   .social-links img { 
+      margin-right: 1rem;
+      margin-top: 1rem;
+
+      height: 1.5rem;
+      width: 1.5rem;
+   }
+}
