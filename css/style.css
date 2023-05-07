@@ -3,3 +3,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/*Ajuste para visualizar o header.
+
+html {
+  background-color: black;
+}
+
+*/
+
+
+
+:root {
+  --primary-color: #ff7757;
+}
+
+header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  justify-content: space-between;
+  padding: 20px 32px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+header a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header .logo {
+  width: 140px;
+}
+
+header nav {
+  align-items: center;
+  gap: 32px;
+}
+
+header nav a.active {
+  font-weight: 500;
+}
+
+header nav a.active::after {
+  background: var(--primary-color);
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+}
+
+header nav a:not(.active):hover::after {
+  animation: slideLeft 0.2s ease-out;
+  background: var(--primary-color);
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+}
+
+@keyframes slideLeft {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+header div {
+  align-items: center;
+  gap: 36px;
+}
+
+header div a:not(.button):hover {
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
+}
+
+header div .button {
+  background-color: var(--primary-color);
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 12px 24px;
+}
+
+header div .button:hover {
+  filter: saturate(1.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger {
+  background: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
+
+.hamburger:hover {
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger img {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  header {
+    padding: 36px 32px;
+  }
+
+  header .logo {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1920px) {
+  header {
+    padding: 40px 182px;
+  }
+}
+
+.menu {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.menu.opened {
+  animation: swipeDown 0.3s ease-in-out;
+  display: flex;
+  top: 0;
+}
+
+@keyframes swipeDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.menu header {
+  align-items: center;
+  background-image: url(../assets/img/Hero\ Section.png);
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 100%;
+}
+
+.menu nav a {
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.menu nav a img {
+  opacity: 0;
+  width: 40px;
+}
+
+.menu nav a:hover {
+  filter: saturate(1.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu nav a:hover > img {
+  animation: slideRight 0.15s ease-in-out forwards;
+  opacity: 1;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(10px);
+  }
+}
+
+.menu nav a.active {
+  font-weight: 500;
+}
+
+.menu nav hr {
+  border: 1px solid #ffffff;
+  margin: 0;
+  opacity: 0.5;
+}
+
+.menu div {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.menu > hr {
+  border: 1px solid #ffffff;
+  margin: 20px 0;
+  opacity: 0.5;
+  width: 60%;
+}
+
+.menu div a {
+  background: #ffffff;
+  border-radius: 6px;
+  color: #000000;
+  font-weight: 500;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.menu div a:hover {
+  opacity: 80%;
+  transition: all 0.3s ease-in-out;
+}
