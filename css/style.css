@@ -68,6 +68,7 @@ footer h4 {
 
 .footer .row {
   display: flex;
+  margin-left: 3rem;
 }
 
 .social-links img {
