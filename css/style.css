@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 /*Ajuste para visualizar o header.
 
 html {
@@ -11,7 +10,10 @@ html {
 
 */
 
-
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 :root {
   --primary-color: #ff7757;
@@ -94,7 +96,7 @@ header div .button {
 }
 
 header div .button:hover {
-  filter: saturate(1.5);
+  background-color: #ff8e73;
   transition: all 0.3s ease-in-out;
 }
 
@@ -188,7 +190,7 @@ header div .button:hover {
 }
 
 .menu nav a:hover {
-  filter: saturate(1.5);
+  background-color: #ff8e73;
   transition: all 0.3s ease-in-out;
 }
 
@@ -247,4 +249,190 @@ header div .button:hover {
 .menu div a:hover {
   opacity: 80%;
   transition: all 0.3s ease-in-out;
+}
+
+.trip_planners {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 20px;
+}
+
+.trip_planners > div {
+  max-width: 400px;
+}
+
+.trip_planners > div h2 {
+  color: #172432;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 60px;
+}
+
+.trip_planners > div hr {
+  border: 2px solid var(--primary-color);
+  margin: 20px 0 32px;
+  opacity: 100%;
+  width: 231px;
+}
+
+.trip_planners > div p {
+  color: #767e86;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.trip_planners div button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 16px;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  margin-left: 14px;
+  margin-top: 32px;
+  padding: 20px;
+  position: relative;
+}
+
+.trip_planners div button:hover {
+  background-color: #ff8e73;
+  transition: all 0.3s ease-in-out;
+}
+
+.trip_planners div button::after {
+  background: #172432;
+  content: '';
+  display: block;
+  height: 40px;
+  left: -14px;
+  position: absolute;
+  top: -14px;
+  width: 40px;
+  z-index: -10;
+}
+
+.trip_planners div button::before {
+  background: #767e86;
+  bottom: -14px;
+  content: '';
+  display: block;
+  height: 40px;
+  position: absolute;
+  right: -14px;
+  width: 40px;
+  z-index: -10;
+}
+
+.trip_planners ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.trip_planners ul .trip_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.trip_planners ul .trip_card > img {
+  border-radius: 26px;
+}
+
+.trip_planners ul .trip_card > img.tablet {
+  display: none;
+}
+
+.trip_planners ul .trip_card .info {
+  color: #172432;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.trip_planners ul .trip_card .info p {
+  margin: 0;
+}
+
+.trip_planners ul .trip_card .info div {
+  align-items: center;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.trip_planners ul .trip_card .info strong {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 28px;
+}
+
+.trip_planners ul .trip_card .info .rate span {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+}
+
+.trip_planners ul .trip_card .info .rate span img {
+  width: 24px;
+}
+
+@media (min-width: 768px) and (max-width: 1151px) {
+  .trip_planners ul .trip_card > img {
+    display: none;
+  }
+
+  .trip_planners ul .trip_card > img.tablet {
+    display: block;
+  }
+
+  .trip_planners ul .trip_card .info div {
+    font-size: 24px;
+  }
+
+  .trip_planners ul .trip_card .info strong {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1152px) {
+  .trip_planners {
+    align-items: center;
+    flex-direction: row;
+    padding: 140px 0;
+    padding-left: 32px;
+  }
+
+  .trip_planners ul {
+    flex-direction: row;
+    gap: 32px;
+    width: 545px;
+  }
+
+  .trip_planners ul .trip_card > img {
+    display: block;
+  }
+
+  .trip_planners ul .trip_card > img.mobile {
+    display: none;
+  }
+
+  .trip_planners ul .trip_card .info:not(.show) {
+    display: none;
+  }
+}
+
+@media (min-width: 1920px) {
+  .trip_planners {
+    gap: 100px;
+    padding-left: 182px;
+  }
 }
