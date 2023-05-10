@@ -4,9 +4,9 @@
 
 
 :root {
-  --primary-color: #ff7757;
   --white: #ffffff;
   --gray-300: #767e86;
+  
   --orange-100: #ffd2c7;
   --orange-500: #ff7757;
   --orange-700: #ee6c4f;
@@ -55,7 +55,7 @@ header nav a.active {
 }
 
 header nav a.active::after {
-  background: var(--primary-color);
+  background: var(--orange-500);
   content: '';
   display: block;
   height: 4px;
@@ -64,7 +64,7 @@ header nav a.active::after {
 
 header nav a:not(.active):hover::after {
   animation: slideLeft 0.2s ease-out;
-  background: var(--primary-color);
+  background: var(--orange-500);
   content: '';
   display: block;
   height: 4px;
@@ -92,7 +92,7 @@ header div a:not(.button):hover {
 }
 
 header div .button {
-  background-color: var(--primary-color);
+  background-color: var(--orange-500);
   border-radius: 6px;
   color: #ffffff;
   padding: 12px 24px;
@@ -142,7 +142,7 @@ header div .button:hover {
   position: absolute;
   top: -100%;
   width: 100%;
-  background-color: var(--primary-color);
+  background-color: var(--orange-500);
 }
 
 .menu.opened {
@@ -178,7 +178,7 @@ header div .button:hover {
 
 .menu nav a {
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--orange-500);
   color: #ffffff;
   display: flex;
   font-weight: 400;
