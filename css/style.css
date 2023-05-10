@@ -17,6 +17,11 @@ html {
   --primary-color: #ff7757;
 }
 
+.home {
+  background-image: url(../assets/img/Hero\ Section.png);
+  min-height: 100vh;
+}
+
 header {
   align-items: center;
   background-color: transparent;
@@ -25,8 +30,6 @@ header {
   font-size: 16px;
   justify-content: space-between;
   padding: 20px 32px;
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 
