@@ -1,256 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossOrigin="anonymous" />
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/style.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Travellian</title>
+  </head>
 
-  <title>Travellian</title>
-</head>
+  <body>
+    <!-- Home -->
+    <section class="home">
+      <!-- Header -->
+      <header>
+        <!-- Logo -->
+        <a href="/">
+          <img
+            class="logo"
+            src="/assets/icons/logo.svg"
+            alt="Logo da Travellian, com a Logomarca da empresa e seu nome escrito ao lado." />
+        </a>
 
-<body>
+        <!-- Navigation -->
+        <nav class="d-none d-xl-flex">
+          <a
+            class="active"
+            href="/">
+            Home
+          </a>
+          <a href="#">Explore</a>
+          <a href="#">Travel</a>
+          <a href="#">Blog</a>
+          <a href="#">Pricing</a>
+        </nav>
 
-  <!-- Home -->
-  <section class="home">
-    <!-- Header -->
-    <header>
-      <!-- Logo -->
-      <a href="/">
-        <img class="logo" src="/assets/icons/logo.svg"
-          alt="Logo da Travellian, com a Logomarca da empresa e seu nome escrito ao lado.">
-      </a>
+        <!-- Login Actions -->
+        <div class="d-none d-xl-flex">
+          <a href="#">Login</a>
+          <a
+            class="button"
+            href="#"
+            role="button">
+            Sign Up
+          </a>
+        </div>
 
-      <!-- Navigation -->
-      <nav class="d-none d-xl-flex">
-        <a class="active" href="/">Home</a>
-        <a href="#">Explore</a>
-        <a href="#">Travel</a>
-        <a href="#">Blog</a>
-        <a href="#">Pricing</a>
+        <!-- Mobile Hamburger -->
+        <button
+          onclick="openMenu()"
+          aria-label="Abrir menu."
+          class="d-xl-none hamburger">
+          <img
+            src="/assets/icons/hamburger 1.svg"
+            alt="Ícone do menu mobile com 3 linhas paralelas horizontais." />
+        </button>
+      </header>
+    </section>
+
+    <!-- Mobile Menu -->
+    <div
+      aria-hidden="true"
+      class="menu"
+      role="menu">
+      <header>
+        <a href="/">
+          <img
+            class="logo"
+            src="/assets/icons/logo.svg"
+            alt="Logo da Travellian, com a Logomarca da empresa e seu nome escrito ao lado." />
+        </a>
+
+        <button
+          onclick="closeMenu()"
+          aria-label="Fechar menu."
+          class="d-xl-none hamburger">
+          <img
+            src="/assets/icons/hamburger 1.svg"
+            alt="Ícone do menu mobile com 3 linhas paralelas horizontais." />
+        </button>
+      </header>
+
+      <nav>
+        <a
+          class="active"
+          href="/">
+          <span>Home</span>
+          <img
+            src="/assets/icons/chevron-right.svg"
+            alt="Ícone de seta para a direita." />
+        </a>
+
+        <hr />
+
+        <a href="#">
+          <span>Explore</span>
+          <img
+            src="/assets/icons/chevron-right.svg"
+            alt="Ícone de seta para a direita." />
+        </a>
+
+        <hr />
+
+        <a href="#">
+          <span>Travel</span>
+          <img
+            src="/assets/icons/chevron-right.svg"
+            alt="Ícone de seta para a direita." />
+        </a>
+
+        <hr />
+
+        <a href="#">
+          <span>Blog</span>
+          <img
+            src="/assets/icons/chevron-right.svg"
+            alt="Ícone de seta para a direita." />
+        </a>
+
+        <hr />
+
+        <a href="#">
+          <span>Plano</span>
+          <img
+            src="/assets/icons/chevron-right.svg"
+            alt="Ícone de seta para a direita." />
+        </a>
       </nav>
 
-      <!-- Login Actions -->
-      <div class="d-none d-xl-flex">
-        <a href="#">Login</a>
-        <a class="button" href="#" role="button">Sign Up</a>
+      <hr />
+
+      <div>
+        <a
+          class="button"
+          href="#"
+          role="button">
+          Login
+        </a>
+        <a
+          class="button"
+          href="#"
+          role="button">
+          Sign Up
+        </a>
+      </div>
+    </div>
+
+    <!-- Trip Planners -->
+    <section class="trip_planners">
+      <div>
+        <h2>Trip Planners</h2>
+        <hr />
+        <p>
+          20 years from now you will be more disappointed by the things that you
+          didn't do. Stop regretting and start traveling, start throwing off the
+          bowlines.
+        </p>
+        <button>View all trip plans</button>
       </div>
 
-      <!-- Mobile Hamburger -->
-      <button onclick="openMenu()" aria-label="Abrir menu." class="d-xl-none hamburger">
-        <img src="/assets/icons/hamburger 1.svg" alt="Ícone do menu mobile com 3 linhas paralelas horizontais.">
-      </button>
-    </header>
-  </section>
+      <!-- Trip Cards -->
+      <ul>
+        <li class="trip_card">
+          <img
+            src="/assets/img/Image Container-7.png"
+            alt="Imagem do Coliseu de Roma, uma estrutura circular com diversos arcos em suas entradas e janelas dispostas por toda a estrutura, feita de tijolos acinzentados teto aberto." />
 
-  <!-- Mobile Menu -->
-  <div aria-hidden="true" class="menu" role="menu">
-    <header>
-      <a href="/">
-        <img class="logo" src="/assets/icons/logo.svg"
-          alt="Logo da Travellian, com a Logomarca da empresa e seu nome escrito ao lado.">
-      </a>
+          <!-- This image will be rendered on tablet devices -->
+          <img
+            class="tablet"
+            src="/assets/img/Image Container-7(tablet).png"
+            alt="Imagem do Coliseu de Roma, uma estrutura circular com diversos arcos em suas entradas e janelas dispostas por toda a estrutura, feita de tijolos acinzentados teto aberto." />
 
-      <button onclick="closeMenu()" aria-label="Fechar menu." class="d-xl-none hamburger">
-        <img src="/assets/icons/hamburger 1.svg" alt="Ícone do menu mobile com 3 linhas paralelas horizontais.">
-      </button>
-    </header>
+          <div class="info">
+            <div>
+              <p>GUIDED TOUR</p>
 
-    <nav>
-      <a class="active" href="/">
-        <span>Home</span>
-        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
-      </a>
-      <hr>
-      <a href="#">
-        <span>Explore</span>
-        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
-      </a>
-      <hr>
-      <a href="#">
-        <span>Travel</span>
-        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
-      </a>
-      <hr>
-      <a href="#">
-        <span>Blog</span>
-        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
-      </a>
-      <hr>
-      <a href="#">
-        <span>Plano</span>
-        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
-      </a>
-    </nav>
-    <hr>
+              <p>€99/Day</p>
+            </div>
 
-    <div>
-      <a class="button" href="#" role="button">Login</a>
-      <a class="button" href="#" role="button">Sign Up</a>
-    </div>
-  </div>
+            <strong>Rome City Tour</strong>
 
+            <div class="rate">
+              <span>
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+              </span>
 
-  <!-- Trip Planners -->
-  <section class="trip_planners">
-    <div>
-      <h2>Trip Planners</h2>
-      <hr>
-      <p>
-        20 years from now you will be more disappointed by the things that you didn't do. Stop regretting and start
-        traveling, start throwing off the bowlines.
-      </p>
-      <button>View all trip plans</button>
-    </div>
-
-    <!-- Trip Cards -->
-    <ul>
-      <li class="trip_card">
-        <img src="/assets/img/Image Container-7.png"
-          alt="Imagem do Coliseu de Roma, uma estrutura circular com diversos arcos em suas entradas e janelas dispostas por toda a estrutura, feita de tijolos acinzentados teto aberto.">
-        <!-- This image will be rendered on tablet devices -->
-        <img class="tablet" src="/assets/img/Image Container-7(tablet).png"
-          alt="Imagem do Coliseu de Roma, uma estrutura circular com diversos arcos em suas entradas e janelas dispostas por toda a estrutura, feita de tijolos acinzentados teto aberto.">
-
-        <div class="info">
-          <div>
-            <p>
-              GUIDED TOUR
-            </p>
-
-            <p>€99/Day</p>
+              <p>7 Days tour</p>
+            </div>
           </div>
+        </li>
 
-          <strong>Rome City Tour</strong>
+        <li class="trip_card">
+          <img
+            src="/assets/img/Col-block-4.png"
+            alt="Imagem da Torre Eiffel, uma torre triangular feita de metal que está centralizada em uma famosa praça da França, vista de uma rua que o leva em direção a ela." />
 
-          <div class="rate">
-            <span>
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-            </span>
+          <!-- This image will be rendered on tablet devices -->
+          <img
+            class="tablet"
+            src="/assets/img/Col-block-4(tablet).png"
+            alt="Imagem da Torre Eiffel, uma torre triangular feita de metal que está centralizada em uma famosa praça da França, vista de uma rua que o leva em direção a ela." />
 
-            <p>
-              7 Days tour
-            </p>
+          <div class="info show">
+            <div>
+              <p>GUIDED TOUR</p>
+
+              <p>€95/Day</p>
+            </div>
+
+            <strong>Paris City Tour</strong>
+
+            <div class="rate">
+              <span>
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+              </span>
+
+              <p>7 Days tour</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="trip_card">
-        <img src="/assets/img/Col-block-4.png"
-          alt="Imagem da Torre Eiffel, uma torre triangular feita de metal que está centralizada em uma famosa praça da França, vista de uma rua que o leva em direção a ela.">
-        <!-- This image will be rendered on tablet devices -->
-        <img class="tablet" src="/assets/img/Col-block-4(tablet).png"
-          alt="Imagem da Torre Eiffel, uma torre triangular feita de metal que está centralizada em uma famosa praça da França, vista de uma rua que o leva em direção a ela.">
+        </li>
 
-        <div class="info show">
-          <div>
-            <p>
-              GUIDED TOUR
-            </p>
+        <li class="trip_card">
+          <img
+            src="/assets/img/Image Container-8.png"
+            alt="Imagem com uma vista panorâmica de cima sobre a cidade de Barcelona, apresentado seus prédios que formam quadrados com seus pátios no meio da estrutura, envoltos de fachadas clássicas e elegantes." />
 
-            <p>€95/Day</p>
+          <!-- This image will be rendered on tablet devices -->
+          <img
+            class="tablet"
+            src="/assets/img/Image Container-8(tablet).png"
+            alt="Imagem com uma vista panorâmica de cima sobre a cidade de Barcelona, apresentado seus prédios que formam quadrados com seus pátios no meio da estrutura, envoltos de fachadas clássicas e elegantes." />
+
+          <div class="info">
+            <div>
+              <p>GUIDED TOUR</p>
+
+              <p>€89/Day</p>
+            </div>
+
+            <strong>Barcelona City Tour</strong>
+
+            <div class="rate">
+              <span>
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+              </span>
+
+              <p>7 Days tour</p>
+            </div>
           </div>
+        </li>
 
-          <strong>Paris City Tour</strong>
+        <li class="trip_card">
+          <img
+            src="/assets/img/Image Container-9.png"
+            alt="Imagem de uma das diversas praças de Budapeste, com o monumento de uma pessoa em cima de um cavalo, por cima de outras esculturas em mármore." />
 
-          <div class="rate">
-            <span>
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-            </span>
+          <!-- This image will be rendered on tablet devices -->
+          <img
+            class="tablet"
+            src="/assets/img/Image Container-9(tablet).png"
+            alt="Imagem de uma das diversas praças de Budapeste, com o monumento de uma pessoa em cima de um cavalo, por cima de outras esculturas em mármore." />
 
-            <p>
-              7 Days tour
-            </p>
+          <div class="info">
+            <div>
+              <p>GUIDED TOUR</p>
+
+              <p>€89/Day</p>
+            </div>
+
+            <strong>Budapest City Tour</strong>
+
+            <div class="rate">
+              <span>
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+                <img
+                  src="/assets/icons/star 1.svg"
+                  alt="Ícone de estrela." />
+              </span>
+
+              <p>7 Days tour</p>
+            </div>
           </div>
-        </div>
-      </li>
-      <li class="trip_card">
-        <img src="/assets/img/Image Container-8.png"
-          alt="Imagem com uma vista panorâmica de cima sobre a cidade de Barcelona, apresentado seus prédios que formam quadrados com seus pátios no meio da estrutura, envoltos de fachadas clássicas e elegantes.">
-        <!-- This image will be rendered on tablet devices -->
-        <img class="tablet" src="/assets/img/Image Container-8(tablet).png"
-          alt="Imagem com uma vista panorâmica de cima sobre a cidade de Barcelona, apresentado seus prédios que formam quadrados com seus pátios no meio da estrutura, envoltos de fachadas clássicas e elegantes.">
+        </li>
+      </ul>
+    </section>
 
-        <div class="info">
-          <div>
-            <p>
-              GUIDED TOUR
-            </p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
 
-            <p>€89/Day</p>
-          </div>
-
-          <strong>Barcelona City Tour</strong>
-
-          <div class="rate">
-            <span>
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-            </span>
-
-            <p>
-              7 Days tour
-            </p>
-          </div>
-        </div>
-      </li>
-      <li class="trip_card">
-        <img src="/assets/img/Image Container-9.png"
-          alt="Imagem de uma das diversas praças de Budapeste, com o monumento de uma pessoa em cima de um cavalo, por cima de outras esculturas em mármore.">
-        <!-- This image will be rendered on tablet devices -->
-        <img class="tablet" src="/assets/img/Image Container-9(tablet).png"
-          alt="Imagem de uma das diversas praças de Budapeste, com o monumento de uma pessoa em cima de um cavalo, por cima de outras esculturas em mármore.">
-
-        <div class="info">
-          <div>
-            <p>
-              GUIDED TOUR
-            </p>
-
-            <p>€89/Day</p>
-          </div>
-
-          <strong>Budapest City Tour</strong>
-
-          <div class="rate">
-            <span>
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela.">
-            </span>
-
-            <p>
-              7 Days tour
-            </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-
-  <script src="/js/menu.js"></script>
-</body>
-
+    <!-- Script of Mobile Menu -->
+    <script src="/js/menu.js"></script>
+  </body>
 </html>
