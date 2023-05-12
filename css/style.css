@@ -2,13 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/*Ajuste para visualizar o header.
-
-html {
-  background-color: black;
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-*/
 
 html {
   max-width: 100%;
@@ -16,14 +15,32 @@ html {
 }
 
 :root {
-  --primary-color: #ff7757;
+  --black: #000000;
+  --white: #ffffff;
+  --gray-300: #767e86;
+
+  --orange-100: #ffd2c7;
+  --orange-400: #ff8e73;
+  --orange-500: #ff7757;
+  --orange-700: #ee6c4f;
+
+  --yellow-100: #ffe8d4;
+
+  --brown-900: #61291c;
+  --brown-1000: #331811;
+
+  --blue-900: #172432;
+}
+
+.home {
+  background-image: url(../assets/img/Hero\ Section.png);
+  min-height: 100vh;
 }
 
 header {
   align-items: center;
   background-color: transparent;
   display: flex;
-  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   justify-content: space-between;
   padding: 20px 32px;
@@ -33,7 +50,7 @@ header {
 }
 
 header a {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 400;
   text-decoration: none;
 }
@@ -52,7 +69,7 @@ header nav a.active {
 }
 
 header nav a.active::after {
-  background: var(--primary-color);
+  background: var(--orange-500);
   content: '';
   display: block;
   height: 4px;
@@ -61,7 +78,7 @@ header nav a.active::after {
 
 header nav a:not(.active):hover::after {
   animation: slideLeft 0.2s ease-out;
-  background: var(--primary-color);
+  background: var(--orange-500);
   content: '';
   display: block;
   height: 4px;
@@ -89,14 +106,14 @@ header div a:not(.button):hover {
 }
 
 header div .button {
-  background-color: var(--primary-color);
+  background-color: var(--orange-500);
   border-radius: 6px;
-  color: #ffffff;
+  color: var(--white);
   padding: 12px 24px;
 }
 
 header div .button:hover {
-  background-color: #ff8e73;
+  background-color: var(--orange-400);
   transition: all 0.3s ease-in-out;
 }
 
@@ -134,12 +151,12 @@ header div .button:hover {
 
 .menu {
   align-items: center;
+  background-color: var(--orange-500);
   display: none;
   flex-direction: column;
   position: absolute;
   top: -100%;
   width: 100%;
-  background-color: var(--primary-color);
 }
 
 .menu.opened {
@@ -175,8 +192,8 @@ header div .button:hover {
 
 .menu nav a {
   align-items: center;
-  background-color: var(--primary-color);
-  color: #ffffff;
+  background-color: var(--orange-500);
+  color: var(--white);
   display: flex;
   font-weight: 400;
   justify-content: space-between;
@@ -190,7 +207,7 @@ header div .button:hover {
 }
 
 .menu nav a:hover {
-  background-color: #ff8e73;
+  background-color: var(--orange-400);
   transition: all 0.3s ease-in-out;
 }
 
@@ -214,7 +231,7 @@ header div .button:hover {
 }
 
 .menu nav hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   margin: 0;
   opacity: 0.5;
 }
@@ -229,16 +246,16 @@ header div .button:hover {
 }
 
 .menu > hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   margin: 20px 0;
   opacity: 0.5;
   width: 60%;
 }
 
 .menu div a {
-  background: #ffffff;
+  background: var(--white);
   border-radius: 6px;
-  color: #000000;
+  color: var(--black);
   font-weight: 500;
   padding: 12px 24px;
   text-align: center;
@@ -263,31 +280,29 @@ header div .button:hover {
 }
 
 .trip_planners > div h2 {
-  color: #172432;
+  color: var(--blue-900);
   font-family: 'Playfair Display', sans-serif;
   font-size: 60px;
 }
 
 .trip_planners > div hr {
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--orange-500);
   margin: 20px 0 32px;
   opacity: 100%;
   width: 231px;
 }
 
 .trip_planners > div p {
-  color: #767e86;
-  font-family: 'Rubik', sans-serif;
+  color: var(--gray-300);
   font-size: 18px;
   line-height: 21px;
 }
 
 .trip_planners div button {
-  background-color: var(--primary-color);
+  background-color: var(--orange-500);
   border: none;
   border-radius: 16px;
-  color: #ffffff;
-  font-family: 'Rubik', sans-serif;
+  color: var(--white);
   font-size: 18px;
   margin-left: 14px;
   margin-top: 32px;
@@ -296,12 +311,12 @@ header div .button:hover {
 }
 
 .trip_planners div button:hover {
-  background-color: #ff8e73;
+  background-color: var(--orange-400);
   transition: all 0.3s ease-in-out;
 }
 
 .trip_planners div button::after {
-  background: #172432;
+  background: var(--blue-900);
   content: '';
   display: block;
   height: 40px;
@@ -313,7 +328,7 @@ header div .button:hover {
 }
 
 .trip_planners div button::before {
-  background: #767e86;
+  background: var(--gray-300);
   bottom: -14px;
   content: '';
   display: block;
@@ -350,7 +365,7 @@ header div .button:hover {
 }
 
 .trip_planners ul .trip_card .info {
-  color: #172432;
+  color: var(--blue-900);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -364,7 +379,6 @@ header div .button:hover {
 .trip_planners ul .trip_card .info div {
   align-items: center;
   display: flex;
-  font-family: 'Rubik', sans-serif;
   font-size: 18px;
   justify-content: space-between;
   width: 100%;
