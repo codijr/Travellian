@@ -40,7 +40,7 @@ header {
 }
 
 header a {
-  color: #ffffff;
+  color: var(--white);
   font-weight: 400;
   text-decoration: none;
 }
@@ -98,7 +98,7 @@ header div a:not(.button):hover {
 header div .button {
   background-color: var(--orange-500);
   border-radius: 6px;
-  color: #ffffff;
+  color: var(--white);
   padding: 12px 24px;
 }
 
@@ -183,7 +183,7 @@ header div .button:hover {
 .menu nav a {
   align-items: center;
   background-color: var(--orange-500);
-  color: #ffffff;
+  color: var(--white);
   display: flex;
   font-weight: 400;
   justify-content: space-between;
@@ -221,7 +221,7 @@ header div .button:hover {
 }
 
 .menu nav hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   margin: 0;
   opacity: 0.5;
 }
@@ -236,14 +236,14 @@ header div .button:hover {
 }
 
 .menu > hr {
-  border: 1px solid #ffffff;
+  border: 1px solid var(--white);
   margin: 20px 0;
   opacity: 0.5;
   width: 60%;
 }
 
 .menu div a {
-  background: #ffffff;
+  background: var(--white);
   border-radius: 6px;
   color: #000000;
   font-weight: 500;
@@ -268,7 +268,7 @@ HERO CONTENT
 }
 
 #content-hero > h1{
-  color:white;
+  color: var(--white);
   font-family: var(--font-display);
   font-weight: 400;
   font-size: 60px;
@@ -276,7 +276,7 @@ HERO CONTENT
 }
 
 #content-hero > p{
-  color: white;
+  color: var(--white);
   font-family: var(--defaut-font);
   font-weight: 400;
   font-size: 18px;
@@ -290,7 +290,7 @@ HERO CONTENT
 
 form{
   position: relative;
-  background-color: white;
+  background-color: var(--white);
   height: 216px;
   max-width: 950px;
   width: 100%;
@@ -316,7 +316,7 @@ form input{
 }
 
 #book-now{
-  background-color: #ff7757;
+  background-color: var(--orange-500);
   width: 170px;
   height: 216px;
   border-radius: 0 25px 25px 0;
@@ -328,7 +328,7 @@ form input{
 #book-now p{
   font-size: 36px;
   font-family: var(--font-display);
-  color: white;
+  color: var(--white);
   width: 85px;
   margin: 0;
 }
