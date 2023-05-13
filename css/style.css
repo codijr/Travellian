@@ -386,6 +386,12 @@ MEDIA QUERIES
   }
 }
 
+@media (max-width:1024px){
+  form{
+    width: 700px;
+  }
+}
+
 @media (max-width:768px){
   #content-hero > h1{
     font-size: 54px;
@@ -453,6 +459,18 @@ MEDIA QUERIES
   #content-hero > p{
     font-size: 18px;
     line-height: 21px;
+  }
+}
+
+@media (max-width: 425px){
+  #content-hero{
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 375px){
+  #content-hero{
+    margin-left: 2rem;
   }
 }
 
