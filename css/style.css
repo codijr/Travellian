@@ -34,7 +34,7 @@ header {
   display: flex;
   font-family: 'Rubik', sans-serif;
   font-size: 16px;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px 32px;
   width: 100%;
 }
@@ -264,19 +264,22 @@ HERO CONTENT
 #content-hero{
   padding-top: 100px;
   padding-left: 182px;
+  margin-left: 6rem;
 }
 
 #content-hero > h1{
   color:white;
   font-family: var(--font-display);
-  font-size: 84px;
-  line-height: 111px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 80px;
 }
 
 #content-hero > p{
   color: white;
   font-family: var(--defaut-font);
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -286,15 +289,17 @@ HERO CONTENT
 }
 
 form{
+  position: relative;
   background-color: white;
   height: 216px;
-  max-width: 1413px;
+  max-width: 950px;
   width: 100%;
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
   padding: 70px 0 70px 250px;
   font-family: var(--defaut-font);
+  margin-bottom: 200px;
 }
 
 form p{
