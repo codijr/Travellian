@@ -351,8 +351,17 @@ MEDIA QUERIES
 @media (max-width:1440px){
   #content-hero{
     padding-left: 18px;
+    margin-left: auto;
   }
 }
+
+@media (min-width:1441px) and (max-width:1920px){
+  #content-hero{
+    padding-left: 18px;
+    margin-left: auto;
+  }
+}
+
 
 @media (max-width:1235px){
   form{
@@ -449,6 +458,14 @@ MEDIA QUERIES
   }
 }
 
+@media (max-width: 507px){
+  #content-hero {
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: lighter;
+  }
+}
+
 @media (max-width: 450px){
   #content-hero > h1{
     font-size: 40px;
@@ -462,20 +479,3 @@ MEDIA QUERIES
   }
 }
 
-@media (max-width: 425px){
-  #content-hero{
-    margin-left: 3rem;
-  }
-}
-
-@media (max-width: 375px){
-  #content-hero{
-    margin-left: 2rem;
-  }
-}
-
-@media (max-width: 320px){
-  #content-hero{
-    margin-left: 1rem;
-  }
-}
