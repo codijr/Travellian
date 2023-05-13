@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 :root {
   --white: #ffffff;
   --gray-300: #767e86;
@@ -17,10 +16,15 @@
   --brown-1000: #331811;
 
   --blue-900: #172432;
+
+  --font-display: 'Playfair Display', serif;
+  --defaut-font: 'Rubik', sans-serif;
 }
 
 .home {
   background-image: url(../assets/img/Hero\ Section.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
 }
 
@@ -252,4 +256,196 @@ header div .button:hover {
 .menu div a:hover {
   opacity: 80%;
   transition: all 0.3s ease-in-out;
+}
+
+/*============
+HERO CONTENT 
+============*/
+#content-hero{
+  padding-top: 100px;
+  padding-left: 182px;
+}
+
+#content-hero > h1{
+  color:white;
+  font-family: var(--font-display);
+  font-size: 84px;
+  line-height: 111px;
+}
+
+#content-hero > p{
+  color: white;
+  font-family: var(--defaut-font);
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#form{
+  display:flex ;
+  margin-top: 170px;
+}
+
+form{
+  background-color: white;
+  height: 216px;
+  max-width: 1413px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 70px 0 70px 250px;
+  font-family: var(--defaut-font);
+}
+
+form p{
+  text-transform: uppercase;
+  color: #767E86;
+}
+
+form input{
+  border-style: solid;
+  border-bottom-width: 2px;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+#book-now{
+  background-color: #ff7757;
+  width: 170px;
+  height: 216px;
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#book-now p{
+  font-size: 36px;
+  font-family: var(--font-display);
+  color: white;
+  width: 85px;
+  margin: 0;
+}
+
+#book-now i{
+  font-size: 30px;
+}
+
+/*============
+MEDIA QUERIES 
+============*/
+
+@media (max-width:1650px){
+  form{
+    width: 1035px;
+    padding: 70px 0 70px 20px;
+  }
+}
+
+@media (max-width:1440px){
+  #content-hero{
+    padding-left: 18px;
+  }
+}
+
+@media (max-width:1235px){
+  form{
+    width: 950px;
+    height: 176px;
+    padding: 50px 0 50px 20px;
+  }
+
+  #book-now{
+    height: 176px;
+  }
+}
+
+@media (max-width:1152px){
+  #content-hero > h1{
+    font-size: 64px;
+    line-height: 85px;
+  }
+}
+
+@media (max-width:1080px){
+  form{
+    width: 950px;
+    height: 215px;
+    padding: 20px 0 50px 20px;
+    gap: 25px;
+  }
+
+  #book-now{
+    height: 216px;
+  }
+}
+
+@media (max-width:768px){
+  #content-hero > h1{
+    font-size: 54px;
+    line-height: 72px;
+  }
+
+  #content-hero > p{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  form{
+    width: 500px;
+    height: 216px;
+    padding: 35px 0 50px 20px;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 585px){
+  #form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    width: 288px;
+    height: 595px;
+    padding: 0px 0 50px 0;
+    border-radius:10px 10px 0 0;
+    gap: 0;
+  }
+
+  .information-form{
+    padding: 25px 0;
+    margin-bottom: 8px;
+  }
+
+  #book-now{
+    width: 288px;
+    height: 128px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  #book-now p{
+    width: 200px;
+  }
+}
+
+@media (max-width: 450px){
+  #content-hero > h1{
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: lighter;
+  }
+
+  #content-hero > p{
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
