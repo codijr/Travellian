@@ -289,6 +289,10 @@ header div .button:hover {
   justify-content: right;
 }
 
+.item {
+  height: 100%;
+}
+
 .card {
   background-color: var(--orange-100);
   border: 0;
@@ -346,6 +350,11 @@ header div .button:hover {
   border-radius: 12px;
 
   color: var(--white);
+}
+
+.details:hover {
+  background-color: var(--orange-700);
+  transition: all 0.3s ease-in-out;
 }
 /* Styling Carousel*/
 .owl-carousel {
