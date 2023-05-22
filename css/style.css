@@ -334,6 +334,18 @@ form input{
   cursor: pointer;
 }
 
+#book-now:hover{
+  filter: saturate(1.5);
+  transition: all 0.3s ease-in-out;
+  width: 17rem;
+  height: 216px;
+  border-radius: 0 25px 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
 #book-now p{
   font-size: 3.6rem;
   font-family: var(--font-display);
@@ -344,7 +356,7 @@ form input{
 
 #book-now p a{
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 #book-now i{
