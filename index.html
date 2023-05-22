@@ -13,20 +13,6 @@
     />
     <!-- Jquery and Owl Carousel -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-    />
-
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -62,19 +48,48 @@
           <a class="button" href="#" role="button">Sign Up</a>
         </div>
 
-        <!-- Mobile Hamburger -->
-        <button
-          onclick="openMenu()"
-          aria-label="Abrir menu."
-          class="d-xl-none hamburger"
-        >
-          <img
-            src="/assets/icons/hamburger 1.svg"
-            alt="Ícone do menu mobile com 3 linhas paralelas horizontais."
-          />
-        </button>
-      </header>
-    </section>
+      <!-- Mobile Hamburger -->
+      <button onclick="openMenu()" aria-label="Abrir menu." class="d-xl-none hamburger">
+        <img src="/assets/icons/hamburger 1.svg" alt="Ícone do menu mobile com 3 linhas paralelas horizontais.">
+      </button>
+    </header>
+
+    <!-- Form -->
+    <div id="content-hero">
+      <h1>Start your unforgettable <br> 
+        journey with us.</h1>
+      <p>The best travel for your jouney begins now</p>
+  </div>
+
+  <div id="form">
+    <form >
+      <div class="information-form">
+        <p>Destination</p>
+        <input type="text">
+      </div>
+
+      <div class="information-form">
+        <p>Person</p>
+        <input type="number">
+      </div>
+
+      <div class="information-form">
+        <p>Check in</p>
+        <input type="datetime-local" name="" id="">
+      </div>
+
+      <div class="information-form">
+        <p>Check out</p>
+        <input type="datetime-local" name="" id="">
+      </div>
+
+    </form>
+    <div id="book-now">
+      <p><a href="#">Book Now</a></p>
+      <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+    </div>
+  </div>
+  </section>
 
     <!-- Mobile Menu -->
     <div aria-hidden="true" class="menu" role="menu">
@@ -99,48 +114,33 @@
         </button>
       </header>
 
-      <nav>
-        <a class="active" href="/">
-          <span>Home</span>
-          <img
-            src="/assets/icons/chevron-right.svg"
-            alt="Ícone de seta para a direita."
-          />
-        </a>
-        <hr />
-        <a href="#">
-          <span>Explore</span>
-          <img
-            src="/assets/icons/chevron-right.svg"
-            alt="Ícone de seta para a direita."
-          />
-        </a>
-        <hr />
-        <a href="#">
-          <span>Travel</span>
-          <img
-            src="/assets/icons/chevron-right.svg"
-            alt="Ícone de seta para a direita."
-          />
-        </a>
-        <hr />
-        <a href="#">
-          <span>Blog</span>
-          <img
-            src="/assets/icons/chevron-right.svg"
-            alt="Ícone de seta para a direita."
-          />
-        </a>
-        <hr />
-        <a href="#">
-          <span>Plano</span>
-          <img
-            src="/assets/icons/chevron-right.svg"
-            alt="Ícone de seta para a direita."
-          />
-        </a>
-      </nav>
-      <hr />
+    <nav>
+      <a class="active" href="/">
+        <span>Home</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
+      </a>
+      <hr>
+      <a href="#">
+        <span>Explore</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
+      </a>
+      <hr>
+      <a href="#">
+        <span>Travel</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
+      </a>
+      <hr>
+      <a href="#">
+        <span>Blog</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
+      </a>
+      <hr>
+      <a href="#">
+        <span>Plano</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita.">
+      </a>
+    </nav>
+    <hr>
 
       <div>
         <a class="button" href="#" role="button">Login</a>
@@ -359,8 +359,8 @@
     ></script>
     <!-- Owl Carousel -->
 
-    <!-- Scripts -->
-    <script src="/js/menu.js"></script>
-    <script src="/js/carousel.js"></script>
-  </body>
+  <script src="/js/menu.js"></script>
+  <script src="https://kit.fontawesome.com/031d3efb46.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
