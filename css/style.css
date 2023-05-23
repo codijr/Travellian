@@ -672,40 +672,6 @@ MEDIA QUERIES
   transition: all 0.3s ease-in-out;
 }
 
-/*.owl-carousel .owl-nav button.owl-prev:hover,
-.owl-carousel .owl-nav button.owl-next:hover {
-  background-color: transparent;
-}
-
-.owl-carousel .owl-prev span {
-  text-align: center;
-  background-color: var(--blue-900);
-  color: var(--white);
-
-  border-radius: 12px;
-}
-
-.owl-carousel .owl-prev span:hover {
-  background-color: #101822;
-  transition: all 0.3s ease-in-out;
-}
-
-.owl-carousel .owl-next span {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  background-color: var(--orange-500);
-  color: var(--white);
-
-  border-radius: 12px;
-  margin: 0;
-}
-
-.owl-carousel .owl-next span:hover {
-  background-color: var(--orange-700);
-  transition: all 0.3s ease-in-out;
-}*/
-
 /* Media Query - Large desktops and medias with min with 1920px */
 @media (min-width: 1920px) {
   /* Styling Carousel*/
