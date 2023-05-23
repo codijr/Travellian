@@ -643,7 +643,36 @@ MEDIA QUERIES
   margin-left: 2rem;
 }
 
-.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-prev{
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: var(--blue-900);
+  color: var(--white);
+  border-radius: 8px;
+  margin-right: 1.5rem;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #101822;
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: var(--orange-500);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: var(--orange-700);
+  transition: all 0.3s ease-in-out;
+}
+
+/*.owl-carousel .owl-nav button.owl-prev:hover,
 .owl-carousel .owl-nav button.owl-next:hover {
   background-color: transparent;
 }
@@ -675,7 +704,7 @@ MEDIA QUERIES
 .owl-carousel .owl-next span:hover {
   background-color: var(--orange-700);
   transition: all 0.3s ease-in-out;
-}
+}*/
 
 /* Media Query - Large desktops and medias with min with 1920px */
 @media (min-width: 1920px) {
