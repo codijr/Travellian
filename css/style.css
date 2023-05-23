@@ -31,7 +31,7 @@
 }
 
 html{
-  font-size: 62.5%
+  font-size: 62.5%;
   /* 1rem = 1px */
   max-width: 100%;
   overflow-x: hidden;
