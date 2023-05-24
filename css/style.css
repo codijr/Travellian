@@ -1137,14 +1137,13 @@ footer .footer-col ul li a:hover {
 /* Start of Newsletter styling */
 footer .newsletter {
   position: relative;
-  bottom: -7.25rem;
+  margin-bottom: -10rem;
 
   background-color: var(--white);
   width: 80rem;
   height: 14rem;
   border-radius: 1.625rem;
   padding: 3.75rem 5rem 3.75rem 5rem; /*top, right, bottom, left*/
-
   display: flex;
   align-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
