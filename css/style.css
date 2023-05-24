@@ -24,9 +24,9 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html{
@@ -1154,39 +1154,46 @@ footer .container-newsletter {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
+  justify-content: space-around;
 }
 
 footer .newsletter h3 {
-  font-size: 2.75rem;
+  width: 70vh;
+  font-size: 4rem;
   font-family: "Playfair Display", serif;
   color: var(--gray-300);
 }
 
 footer .newsletter form {
   display: flex;
+  position: relative;
+  bottom: -9rem;
   align-items: flex-end;
-  justify-content: space-between;
-
-  margin-left: 6.25rem;
+  background-color: transparent;
+  margin-left: 4rem;
 }
 
 footer form label {
   font-size: 1.25rem;
   color: var(--gray-300);
+  margin-left: 4rem;
 }
 
 footer .newsletter form input {
-  min-width: 23.25rem;
+  min-width: 25rem;
+  border-radius: 6px;
   background-color: var(--orange-100);
   color: var(--orange-300);
   padding: 1rem; /*top, right, bottom, left*/
   color: var(--orange-500);
+  margin-left: 4rem;
+  height: 4rem;
 }
 
 footer .newsletter form input::placeholder {
   color: var(--orange-500);
+  font-size: 1.2rem;
 }
 
 footer .newsletter form input:focus {
@@ -1199,9 +1206,10 @@ footer .newsletter form button {
   padding: 1rem 2rem 1rem 2rem; /*top, right, bottom, left*/
   border-radius: 0.625rem;
   border: none;
-  margin-left: 1.25rem;
-
   transition: color 0.4s linear;
+  margin-left: 2rem;
+  height: 4rem;
+  font-size: 1.2rem;
 }
 
 footer .newsletter form button:hover {
@@ -1461,9 +1469,8 @@ footer .newsletter form button:hover {
   footer .newsletter {
     bottom: 0rem;
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 28.9375rem;
-    padding: 2.75rem;
   }
 
   footer .container-newsletter {
@@ -1472,29 +1479,35 @@ footer .newsletter form button:hover {
     justify-content: start;
     padding-left: 1.125rem;
     padding-right: 1.125rem;
+    max-width: fit-content;
   }
 
   footer .newsletter h3 {
-    font-size: 2.375rem;
+    font-size: 2.8rem;
   }
 
   footer .newsletter form {
     display: block;
     align-items: flex-end;
     justify-content: start;
-
-    margin-left: 0rem;
-    margin-top: 3.55rem;
+    max-width: fit-content;
+    margin-left: -3rem;
+    margin-top: -6rem;
+    height: fit-content;
   }
 
   footer .newsletter form input {
-    min-width: 100%;
+    /*min-width: 100%;*/
+    margin-left: 0;
   }
 
   footer .newsletter form button {
     min-width: 100%;
-    margin-left: 0rem;
+    margin-left: 0;
     margin-top: 1rem;
+  }
+  footer form label{
+    margin-left: 0;
   }
 }
 
