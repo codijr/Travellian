@@ -1030,7 +1030,7 @@ MEDIA QUERIES
 
 @media(max-width:320px) {
   #our-blog{
-    margin-top: 6rem;
+    margin-top: 16rem;
   }
 }
 
@@ -1041,6 +1041,7 @@ MEDIA QUERIES
   flex-direction: column;
   gap: 80px;
   padding: 80px 20px;
+  margin-top: -4rem;
 }
 
 .trip_planners > div {
@@ -1170,6 +1171,12 @@ MEDIA QUERIES
 @media (min-width: 320px) and (max-width: 369px) {
   .trip_planners h2 {
     margin-top: 8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .trip_planners{
+    margin-top: -12rem;
   }
 }
 
