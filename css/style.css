@@ -867,7 +867,7 @@ MEDIA QUERIES
   .owl-carousel .owl-nav {
     display: flex;
     justify-content: center;
-
+    margin-top: 8rem;
     height: 4.125rem;
   }
 
@@ -876,7 +876,6 @@ MEDIA QUERIES
     width: 3.75rem;
     height: 3.125rem;
     padding: 0rem 1.5rem 0.5rem 1.5rem;
-
   }
 
   .owl-carousel .owl-next span {
@@ -970,7 +969,14 @@ MEDIA QUERIES
   fill: var(--orange-500);
 }
 
+@media (min-width:768px) and (max-width:1439px){
+  #our-blog{
+    margin-top: 1rem;
+  }
+}
+
 @media(max-width:1340px) {
+
   #img-ourblog img{
   width: 528px;
   height: 686px;
@@ -1019,6 +1025,12 @@ MEDIA QUERIES
   #img-ourblog img{
       width: 100%;
       height: 314px;
+  }
+}
+
+@media(max-width:320px) {
+  #our-blog{
+    margin-top: 6rem;
   }
 }
 
