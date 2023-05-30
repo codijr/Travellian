@@ -44,7 +44,7 @@ body{
   min-height: 100vh;
 }
 
-header {
+.home header {
   align-items: center;
   background-color: transparent;
   display: flex;
@@ -54,26 +54,26 @@ header {
   width: 100%;
 }
 
-header a {
+.home header a {
   color: var(--white);
   font-weight: 400;
   text-decoration: none;
 }
 
-header .logo {
+.home header .logo {
   width: 140px;
 }
 
-header nav {
+.home header nav {
   align-items: center;
   gap: 32px;
 }
 
-header nav a.active {
+.home header nav a.active {
   font-weight: 500;
 }
 
-header nav a.active::after {
+.home header nav a.active::after {
   background: var(--orange-500);
   content: '';
   display: block;
@@ -81,7 +81,7 @@ header nav a.active::after {
   width: 100%;
 }
 
-header nav a:not(.active):hover::after {
+.home header nav a:not(.active):hover::after {
   animation: slideLeft 0.2s ease-out;
   background: var(--orange-500);
   content: '';
@@ -100,56 +100,56 @@ header nav a:not(.active):hover::after {
   }
 }
 
-header div {
+.home header div {
   align-items: center;
   gap: 36px;
 }
 
-header div a:not(.button):hover {
+.home header div a:not(.button):hover {
   opacity: 80%;
   transition: all 0.3s ease-in-out;
 }
 
-header div .button {
+.home header div .button {
   background-color: var(--orange-500);
   border-radius: 6px;
   color: var(--white);
   padding: 12px 24px;
 }
 
-header div .button:hover {
+.home header div .button:hover {
   background-color: var(--orange-700);
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger {
+.home .hamburger {
   background: transparent;
   border: none;
   height: 50px;
   width: 50px;
 }
 
-.hamburger:hover {
+.home .hamburger:hover {
   opacity: 80%;
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger img {
+.home .hamburger img {
   width: 100%;
 }
 
 @media (min-width: 769px) {
-  header {
+  .home header {
     padding: 36px 32px;
   }
 
-  header .logo {
+  .home header .logo {
     width: 200px;
   }
 }
 
 @media (min-width: 1920px) {
-  header {
+  .home header {
     padding: 40px 182px;
   }
 }
