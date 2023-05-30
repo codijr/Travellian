@@ -302,7 +302,7 @@ HERO CONTENT
   margin-top: 17rem;
 }
 
-form{
+#form form{
   position: relative;
   background-color: var(--white);
   height: 21.6rem;
@@ -316,12 +316,12 @@ form{
   margin-bottom: 20rem;
 }
 
-form p{
+#form form p{
   text-transform: uppercase;
   color: #767E86;
 }
 
-form input{
+#form form input{
   border-style: solid;
   border-bottom-width: 2px;
   border-top-width: 0;
@@ -329,7 +329,7 @@ form input{
   border-left-width: 0;
 }
 
-#book-now{
+#form #book-now{
   background-color: var(--orange-500);
   width: 17rem;
   height: 216px;
@@ -340,13 +340,13 @@ form input{
   cursor: pointer;
 }
 
-#book-now:hover{
+#form #book-now:hover{
   filter: saturate(1.5);
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
-#book-now p{
+#form #book-now p{
   font-size: 3.6rem;
   font-family: var(--font-display);
   color: var(--white);
@@ -354,12 +354,12 @@ form input{
   margin: 0;
 }
 
-#book-now p a{
+#form #book-now p a{
   text-decoration: none;
   color: var(--white);
 }
 
-#book-now i{
+#form #book-now i{
   font-size: 3rem;
 }
 
@@ -382,12 +382,12 @@ MEDIA QUERIES
 }
 
 @media (max-width:1235px){
-  form{
+  #form form{
     height: 176px;
     padding: 5rem 0 5rem 2rem;
   }
 
-  #book-now{
+  #form #book-now{
     height: 176px;
   }
 }
@@ -400,20 +400,20 @@ MEDIA QUERIES
 }
 
 @media (max-width:1080px){
-  form{
+  #form form{
     width: 950px;
     height: 215px;
     padding: 2rem 0 5rem 9rem;
     gap: 2.5rem;
   }
 
-  #book-now{
+  #form #book-now{
     height: 216px;
   }
 }
 
 @media (max-width:1024px){
-  form{
+  #form form{
     width: 700px;
   }
 }
@@ -429,7 +429,7 @@ MEDIA QUERIES
     line-height: 2.4rem;
   }
 
-  form{
+  #form form{
     width: 500px;
     height: 216px;
     padding: 3.5rem 0 5rem 2rem;
@@ -448,7 +448,7 @@ MEDIA QUERIES
     padding-bottom: 8rem;
   }
 
-  form{
+  #form form{
     display: flex;
     justify-content: center;
     width: 288px;
@@ -458,19 +458,19 @@ MEDIA QUERIES
     gap: 0;
   }
 
-  .information-form{
+  #form .information-form{
     padding: 2.5rem 0;
     margin-bottom: 0.8rem;
   }
 
-  #book-now{
+  #form #book-now{
     width: 288px;
     height: 128px;
     border-radius: 0 0 10px 10px;
     margin-top: -20rem;
   }
 
-  #book-now p{
+  #form #book-now p{
     width: 200px;
   }
 }
