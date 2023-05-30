@@ -1426,6 +1426,7 @@ footer .newsletter form button:hover {
     display: flex;
     padding-bottom: 6rem;
     margin-left: 3rem;
+    margin-top: -12rem;
   }
   footer .container-newsletter .newsletter form .form .form-detail{
     display: flex;
@@ -1499,6 +1500,7 @@ footer .newsletter form button:hover {
     display: flex;
     padding-bottom: 6rem;
     margin-left: 3rem;
+    margin-top: -11rem;
   }
   footer .container-newsletter .newsletter form .form .form-detail{
     display: flex;
@@ -1575,7 +1577,8 @@ footer .newsletter form button:hover {
   footer .newsletter form {
     display: flex;
     padding-bottom: 6rem;
-    margin-left: 0;
+    margin-left: -7rem;
+    margin-top: -14rem;
   }
   footer .container-newsletter .newsletter form .form .form-detail{
     display: flex;
@@ -1659,6 +1662,7 @@ footer .newsletter form button:hover {
   footer .newsletter h3 {
     font-size: 3.375rem;
     padding-left: 3rem;
+    margin-left: -2.5rem;
   }
 
   footer .newsletter form {
@@ -1667,7 +1671,7 @@ footer .newsletter form button:hover {
     justify-content: start;
     min-width: 100%;
     margin-left: -2rem;
-    margin-top: -12rem;
+    margin-top: -9rem;
     height: fit-content;
   }
 
