@@ -1796,6 +1796,13 @@ footer .newsletter form button:hover {
   }
 }
 
+@media (min-width: 425px) and (max-width: 767px) {
+
+  footer .newsletter h3 {
+    margin-left: 0;
+  }
+}
+
 /* Media Query - Smartphones and medias with min with 320px */
 @media (min-width: 320px) and (max-width: 767px) {
   /* Footer responsiveness */
