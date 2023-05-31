@@ -808,19 +808,25 @@ MEDIA QUERIES
 
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width:424px){
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev{
-    margin-left: 11.5rem
+    margin-left: 10rem
+  }
+  .specialOffer .container .title h2::before {
+    left: 1rem;
   }
 }
 
-@media (min-width:320px) and (max-width:424px){
+@media (min-width:320px) and (max-width:374px){
   .specialOffer .container .title h2,
   .specialOffer .container .title p {
     margin-left: 1.5rem;
   }
   .specialOffer .container .title h2::before {
     left: 0rem;
+  }
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev{
+    margin-left: 8.5rem
   }
 }
 
@@ -1448,7 +1454,7 @@ MEDIA QUERIES
 
   .traveler .title p {
     margin-top: 3.25rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .traveler .card-box {
@@ -1503,7 +1509,7 @@ MEDIA QUERIES
 
   .traveler .title p {
     margin-top: 3.25rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .traveler .card-box {
