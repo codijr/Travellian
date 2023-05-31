@@ -6,7 +6,7 @@
 :root {
   --white: #ffffff;
   --gray-300: #767e86;
-  
+  --gray-100: #f5f6f7;
   --orange-100: #FFF8F1;
   --orange-200: #ffd2c7;
   --orange-500: #ff7757;
@@ -512,32 +512,23 @@ MEDIA QUERIES
   font-family: "Playfair Display", serif;
   color: var(--blue-900);
   position: relative;
-
-
   font-size: 6rem;
   display: flex;
   justify-content: right;
 }
 
-.specialOffer .title h2::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  background-color: var(--orange-500);
-  height: 2px;
-  box-sizing: border-box;
-
-  bottom: -1.25rem;
-  width: 21.6875rem;
-
-  display: flex;
-  justify-content: right;
+.specialOffer .title hr {
+  border: 1px solid var(--orange-500);
+  opacity: 100%;
+  width: 230px;
+  margin: 20px 0 32px;
 }
-
 
 .specialOffer .title p {
   margin-top: 3.25rem;
   font-size: 1.8rem;
+  font-family: var(--defaut-font);
+  font-weight: 400;
 
   color: var(--gray-300);
 
@@ -672,6 +663,10 @@ MEDIA QUERIES
 
 /* Media Query - Large desktops and medias with min with 1920px */
 @media (min-width: 1920px) {
+
+  .specialOffer .container{
+    width: 100%;
+  }
   /* Styling Carousel*/
 
   .specialOffer .container .owl-carousel .owl-nav {
@@ -702,22 +697,10 @@ MEDIA QUERIES
     margin-top: 5rem;
     margin-right: 2rem;
   }
-
-  .specialOffer .container .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Media Query - small desktops and medias with min with 1152px */
-@media (min-width: 1152px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   /* Styling Carousel*/
 
   .specialOffer .container .owl-carousel .owl-nav {
@@ -736,11 +719,21 @@ MEDIA QUERIES
   .specialOffer .container .owl-carousel .owl-next span {
     font-size: 3.5rem;
     padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .specialOffer .container .title hr{
+    margin-left: 77.7rem;
+  }
+  .specialOffer .container .title h2{
+    margin-right: 1.5rem;
+  }
+  .specialOffer .container .title p{
+    margin-right: 1.5rem;
   }
 }
 
 /* Media Query - Tablets and medias with min with 768px */
-@media (min-width: 768px) and (max-width: 1151px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   /* Styling Carousel*/
 
   .specialOffer .container .owl-carousel .owl-nav {
@@ -759,6 +752,10 @@ MEDIA QUERIES
   .specialOffer .container .owl-carousel .owl-next span {
     font-size: 3.5rem;
     padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .specialOffer .container .title hr{
+    margin-left: 51.8rem;
   }
   .specialOffer .container .title h2{
     margin-right: 1.5rem;
@@ -835,13 +832,46 @@ MEDIA QUERIES
   }
 }
 
+@media (min-width: 425px) and (max-width:767px) {
+  .specialOffer .container .title hr {
+    margin-left: 2rem;
+  }
+
+  .specialOffer .container .title h2{
+    margin-right: 5.8rem;
+  }
+
+  .specialOffer .container .title p{
+    margin-right: 5.8rem;
+  }
+}
+
 @media (max-width: 375px) {
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev{
     margin-left: 11.5rem
   }
 }
 
-@media (max-width: 320px) {
+@media (min-width:320px) and (max-width:424px){
+  .specialOffer .container .title hr,
+  .specialOffer .container .title h2,
+  .specialOffer .container .title p {
+    margin-left: 1.5rem;
+  }
+}
+
+/* Media Query - Galaxy Fold and medias with min with 220px */
+
+@media (min-width: 220px) and (max-width: 319px) {
+  /* Styling Carousel*/
+
+  .specialOffer .container .owl-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    height: 4.125rem;
+  }
+
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev{
     margin-left: 8.5rem;
     margin-top: 52rem;
@@ -857,31 +887,7 @@ MEDIA QUERIES
     margin-left: 14rem;
     margin-top: 2rem;
   }
-}
 
-/* Media Query - Galaxy Fold and medias with min with 220px */
-
-@media (min-width: 220px) and (max-width: 320px) {
-  /* Styling Carousel*/
-
-  .specialOffer .container .owl-carousel .owl-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 8rem;
-    height: 4.125rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Start of Our Blog Section Styling*/
@@ -1028,6 +1034,12 @@ MEDIA QUERIES
   }
 }
 
+@media (min-width:375px) and (max-width:384px){
+  #our-blog{
+    margin-top: 14rem;
+  }
+}
+
 @media(max-width:320px) {
   #our-blog{
     margin-top: 16rem;
@@ -1063,6 +1075,8 @@ MEDIA QUERIES
 
 .trip_planners > div p {
   color: var(--gray-300);
+  font-family: var(--defaut-font);
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 }
@@ -1233,6 +1247,549 @@ MEDIA QUERIES
   }
 }
 
+/* Start of Traveler Section styling */
+
+.traveler .container {
+  max-width: 100%;
+  height: 100%;
+}
+
+.traveler .container .title h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  color: var(--blue-900);
+  position: relative;
+}
+
+.traveler hr {
+    border: 1px solid var(--orange-500);
+    opacity: 100%;
+    width: 340px;
+    margin: 20px 0 32px;
+}
+
+.traveler .title p {
+  font-size: 1.8rem;
+  color: var(--gray-300);
+  font-family: var(--defaut-font);
+  font-weight: 400;
+}
+
+.traveler .stars img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.traveler .card-box {
+  position: relative;
+  background-color: var(--gray-100);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.traveler .card-box .card-container p {
+  color: var(--gray-300);
+  justify-items: start;
+}
+
+.traveler .card-container h6 {
+  font-family: "Playfair Display", serif;
+  color: var(--gray-300);
+}
+
+.traveler .card-container span {
+  font-weight: 400;
+  color: var(--gray-300);
+
+  font-size: 1.125rem;
+}
+
+.traveler .card-box .img-area img {
+  position: absolute;
+}
+
+/* Styling Carousel*/
+.traveler .owl-carousel {
+  height: 100%;
+}
+
+.traveler .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: right;
+}
+
+.traveler .owl-carousel .owl-nav button.owl-prev{
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: var(--blue-900);
+  color: var(--white);
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.traveler .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #101822;
+  transition: all 0.3s ease-in-out;
+}
+
+.traveler .owl-carousel .owl-nav button.owl-next{
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: var(--orange-500);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.traveler .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: var(--orange-700);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Query - Large desktops and medias with min with 1920px */
+@media (min-width: 1920px) {
+  /* Start of Traveler Section styling */
+
+  .traveler {
+    height: 77.375rem;
+    width: 100%;
+  }
+
+  .traveler .container {
+    padding: 8.75rem 0rem 28.75rem 0rem;
+  }
+
+  .traveler .title h2 {
+    font-size: 4rem;
+  }
+
+  .traveler .title h2::before {
+    bottom: -1.25rem;
+    width: 21.6875rem;
+  }
+
+  .traveler .title p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box {
+    width: 41.4375rem;
+    margin-top: 10rem;
+  }
+
+  .traveler .card-container {
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .traveler .card-box .card-container p {
+    font-size: 1.125rem;
+  }
+
+  .traveler .card-container h6 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box .img-area img {
+    width: 6.25rem;
+    border-radius: 100rem;
+    margin-left: 2.5rem;
+    top: -3.75rem;
+  }
+
+  /* Styling Carousel*/
+
+  .traveler .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .traveler .owl-carousel .owl-prev span {
+    font-size: 3.5rem;
+    width: 3.75rem;
+    height: 3.125rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .traveler .owl-carousel .owl-next span {
+    font-size: 3.5rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
+/* Media Query - medium desktops and medias with min with 1440px */
+@media (min-width: 1440px) and (max-width: 1919px) {
+  /* Start of Traveler Section styling */
+
+  .traveler {
+    height: 78.81rem;
+    width: 100%;
+  }
+
+  .traveler .container {
+    padding: 8.75rem 2rem 28.75rem 2rem;
+  }
+
+  .traveler .title h2 {
+    font-size: 4rem;
+  }
+
+  .traveler .title h2::before {
+    bottom: -1.25rem;
+    width: 21.6875rem;
+  }
+
+  .traveler .title p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box {
+    width: 36.375rem;
+    margin-top: 10rem;
+  }
+
+  .traveler .card-container {
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .traveler .card-box .card-container p {
+    font-size: 1.125rem;
+  }
+
+  .traveler .card-container h6 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box .img-area img {
+    width: 6.25rem;
+    border-radius: 100rem;
+    margin-left: 2.5rem;
+    top: -3.75rem;
+  }
+
+  /* Styling Carousel*/
+
+  .traveler .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .traveler .owl-carousel .owl-prev span {
+    font-size: 3.5rem;
+    width: 3.75rem;
+    height: 3.125rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .traveler .owl-carousel .owl-next span {
+    font-size: 3.5rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
+/* Media Query - small desktops and medias with min with 1152px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Start of Traveler Section styling */
+  .traveler {
+    height: 78.81rem;
+  }
+
+  .traveler .container {
+    padding: 8.75rem 0rem 28.75rem 2rem;
+  }
+
+  .traveler .title h2 {
+    font-size: 4rem;
+  }
+
+  .traveler .title h2::before {
+    bottom: -1.25rem;
+    width: 21.6875rem;
+  }
+
+  .traveler .title p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box {
+    width: 31.25rem;
+    margin-top: 10rem;
+  }
+
+  .traveler .card-container {
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .traveler .card-box .card-container p {
+    font-size: 1.125rem;
+  }
+
+  .traveler .card-container h6 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box .img-area img {
+    width: 6.25rem;
+    border-radius: 100rem;
+    margin-left: 2.5rem;
+    top: -3.75rem;
+  }
+
+  /* Styling Carousel*/
+
+  .traveler .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .traveler .owl-carousel .owl-prev span {
+    font-size: 3.5rem;
+    width: 3.75rem;
+    height: 3.125rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+
+  .traveler .owl-carousel .owl-next span {
+    font-size: 3.5rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
+/* Media Query - Tablets and medias with min with 768px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Start of Traveler Section styling */
+  .traveler {
+    height: 78.81rem;
+  }
+
+  .traveler .container {
+    padding: 8.75rem 0rem 28.75rem 2rem;
+  }
+
+  .traveler .title h2 {
+    font-size: 4rem;
+  }
+
+  .traveler .title h2::before {
+    bottom: -1.25rem;
+    width: 21.6875rem;
+  }
+
+  .traveler .title p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box {
+    width: 31.25rem;
+    margin-top: 10rem;
+  }
+
+  .traveler .card-container {
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .traveler .card-box .card-container p {
+    font-size: 1.125rem;
+  }
+
+  .traveler .card-container h6 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box .img-area img {
+    width: 6.25rem;
+    border-radius: 100rem;
+    margin-left: 2.5rem;
+    top: -3.75rem;
+  }
+
+  /* Styling Carousel*/
+
+  .traveler .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 19.5rem;
+    justify-content: center;
+  }
+
+  .traveler .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 17rem;
+  }
+}
+
+/* Media Query - Smartphones and medias with min with 320px */
+@media (min-width: 320px) and (max-width: 767px) {
+  /* Start of Traveler Section styling */
+  .traveler {
+    height: 80rem;
+  }
+
+  .traveler .container {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  .traveler .container .title h2 {
+    font-size: 5rem;
+  }
+
+  .traveler hr {
+    width: 230px;
+  }
+
+  .traveler .title p {
+    margin-top: 3.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box {
+    width: 20rem;
+    margin-top: 10rem;
+  }
+
+  .traveler .card-container {
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+  }
+
+  .traveler .card-box .card-container p {
+    font-size: 1.125rem;
+  }
+
+  .traveler .stars {
+    display: flex;
+    justify-content: center;
+  }
+
+  .traveler .stars img {
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+
+  .traveler .card-container h6 {
+    margin-top: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .traveler .card-box .img-area img {
+    width: 6.25rem;
+    border-radius: 100rem;
+    margin-left: 2.5rem;
+    top: -3.75rem;
+  }
+
+  /* Styling Carousel*/
+
+  .traveler .owl-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 0rem;
+  }
+
+  .traveler .owl-carousel .owl-prev span {
+    font-size: 3.5rem;
+    width: 3.75rem;
+    height: 3.125rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+
+    margin-right: 1rem;
+  }
+
+  .traveler .owl-carousel .owl-next span {
+    font-size: 3.5rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
+/* Media Query - Galaxy Fold and medias with min with 220px */
+@media (min-width: 220px) and (max-width: 319px) {
+  /* Start of Traveler Section styling */
+  .traveler {
+    height: 90rem;
+  }
+
+  .traveler .container {
+    padding: 8.75rem 0.5rem 28.75rem 1rem;
+  }
+
+  .traveler .title h2 {
+    font-size: 2.3rem;
+  }
+
+  .traveler .title h2::before {
+    bottom: -1.25rem;
+    width: 15.6875rem;
+  }
+
+  .traveler .title p {
+    margin-top: 3.25rem;
+    font-size: 0.9rem;
+  }
+
+  .traveler .card-box {
+    width: 14rem;
+    margin-top: 5rem;
+  }
+
+  .traveler .card-container {
+    padding: 2.75rem 2rem 2.75rem 2rem;
+  }
+
+  .traveler .card-box .card-container p {
+    font-size: 0.9rem;
+  }
+
+  .traveler .card-container h6 {
+    margin-top: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  .traveler .card-container span {
+    font-size: 1rem;
+  }
+
+  .traveler .card-box .img-area img {
+    width: 6.25rem;
+    border-radius: 100rem;
+    margin-left: 2.5rem;
+    top: -3.75rem;
+  }
+
+  /* Styling Carousel*/
+
+  .traveler .owl-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+
+    height: 4.125rem;
+  }
+
+  .traveler .owl-carousel .owl-prev span {
+    font-size: 3.5rem;
+    width: 3.75rem;
+    height: 3.125rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+
+  }
+
+  .traveler .owl-carousel .owl-next span {
+    font-size: 3.5rem;
+    padding: 0rem 1.5rem 0.5rem 1.5rem;
+  }
+}
+
 /* Start of footer styling */
 footer {
   display: block;
@@ -1385,7 +1942,7 @@ footer .newsletter form button:hover {
     transform: scale(1.2);
   }
 
-  footer .footer {
+  footer .footer .container {
     padding: 15rem 11.375rem 8.75rem 11.375rem; /*top, right, bottom, left*/
     height: 36rem;
   }
@@ -1455,7 +2012,7 @@ footer .newsletter form button:hover {
     width: 1.9rem;
   }
 
-  footer .footer {
+  footer .footer .container {
     padding: 15rem 8.75rem 2rem 8.75rem; /*top, right, bottom, left*/
     height: 36rem;
   }
@@ -1540,7 +2097,7 @@ footer .newsletter form button:hover {
     height: 2.75rem;
   }
 
-  footer .footer {
+  footer .footer .container {
     padding: 15rem 2rem 2rem 2rem; /*top, right, bottom, left*/
     height: 36rem;
   }
@@ -1608,7 +2165,7 @@ footer .newsletter form button:hover {
     width: 1.935625rem;
   }
 
-  footer .footer {
+  footer .footer .container {
     padding: 5.25rem 1.4rem 8.75rem 1.4rem; /*top, right, bottom, left*/
   }
 
@@ -1728,7 +2285,7 @@ footer .newsletter form button:hover {
     margin-bottom: 1rem;
   }
 
-  footer .footer {
+  footer .footer .container  {
     padding: 5rem 1rem 5rem 1rem; /*top, right, bottom, left*/
   }
 
@@ -1855,6 +2412,7 @@ footer .newsletter form button:hover {
     display: block;
     max-width: 100%;
     height: 28.9375rem;
+    margin-top: 7rem;
   }
 
   footer .container-newsletter {
