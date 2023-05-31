@@ -515,13 +515,20 @@ MEDIA QUERIES
   font-size: 6rem;
   display: flex;
   justify-content: right;
+  margin-bottom: 6rem;
 }
 
-.specialOffer .title hr {
-  border: 1px solid var(--orange-500);
-  opacity: 100%;
-  width: 230px;
-  margin: 20px 0 32px;
+.specialOffer .container .title h2::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-color: var(--orange-500);
+  height: 2px;
+  box-sizing: border-box;
+  bottom: -2.5rem;
+  width: 21.6875rem;
+  display: flex;
+  justify-content: right;
 }
 
 .specialOffer .title p {
@@ -529,9 +536,7 @@ MEDIA QUERIES
   font-size: 1.8rem;
   font-family: var(--defaut-font);
   font-weight: 400;
-
   color: var(--gray-300);
-
   display: flex;
   justify-content: right;
 }
@@ -675,21 +680,10 @@ MEDIA QUERIES
     margin-right: 2rem;
   }
 
-  .specialOffer .container .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Media Query - medium desktops and medias with min with 1440px */
-@media (min-width: 1440px) and (max-width: 1919px) {
+@media (min-width: 1440px) and (max-width: 2560px) {
   /* Styling Carousel*/
 
   .specialOffer .container .owl-carousel .owl-nav {
@@ -697,9 +691,18 @@ MEDIA QUERIES
     margin-top: 5rem;
     margin-right: 2rem;
   }
+
 }
 
 /* Media Query - small desktops and medias with min with 1152px */
+
+@media (min-width: 1152px) and (max-width:1439px){
+  .specialOffer .container .title hr{
+    margin-left: 90.5rem;
+    position: static;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1439px) {
   /* Styling Carousel*/
 
@@ -709,21 +712,6 @@ MEDIA QUERIES
     margin-right: 2rem;
   }
 
-  .specialOffer .container .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .title hr{
-    margin-left: 77.7rem;
-  }
   .specialOffer .container .title h2{
     margin-right: 1.5rem;
   }
@@ -742,27 +730,13 @@ MEDIA QUERIES
     margin-right: 2rem;
   }
 
-  .specialOffer .container .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .specialOffer .container .title hr{
-    margin-left: 51.8rem;
-  }
   .specialOffer .container .title h2{
     margin-right: 1.5rem;
   }
   .specialOffer .container .title p{
     margin-right: 1.5rem;
   }
+
 }
 
 /* Media Query - Smartphones and medias with min with 320px */
@@ -778,19 +752,6 @@ MEDIA QUERIES
     margin-right: 0rem;
   }
 
-  .specialOffer .container .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-
-    margin-right: 1rem;
-  }
-
-  .specialOffer .container .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
   .specialOffer .container .title h2{
     margin-right: 2rem;
   }
@@ -833,10 +794,6 @@ MEDIA QUERIES
 }
 
 @media (min-width: 425px) and (max-width:767px) {
-  .specialOffer .container .title hr {
-    margin-left: 2rem;
-  }
-
   .specialOffer .container .title h2{
     margin-right: 5.8rem;
   }
@@ -844,6 +801,11 @@ MEDIA QUERIES
   .specialOffer .container .title p{
     margin-right: 5.8rem;
   }
+
+  .specialOffer .container .title h2::before {
+    left: 2.2rem;
+  }
+
 }
 
 @media (max-width: 375px) {
@@ -853,10 +815,12 @@ MEDIA QUERIES
 }
 
 @media (min-width:320px) and (max-width:424px){
-  .specialOffer .container .title hr,
   .specialOffer .container .title h2,
   .specialOffer .container .title p {
     margin-left: 1.5rem;
+  }
+  .specialOffer .container .title h2::before {
+    left: 0rem;
   }
 }
 
@@ -973,6 +937,12 @@ MEDIA QUERIES
 #content-text-ourblog span img{
   width: 24px;
   fill: var(--orange-500);
+}
+
+@media(min-width:1441px) {
+  #our-blog{
+    margin-left: 7.5rem;
+  }
 }
 
 @media (min-width:768px) and (max-width:1439px){
@@ -1244,6 +1214,7 @@ MEDIA QUERIES
   .trip_planners {
     gap: 100px;
     padding-left: 182px;
+    margin-left: -8rem;
   }
 }
 
@@ -1354,6 +1325,7 @@ MEDIA QUERIES
   .traveler {
     height: 77.375rem;
     width: 100%;
+    margin-left: 10rem;
   }
 
   .traveler .container {
@@ -1362,11 +1334,6 @@ MEDIA QUERIES
 
   .traveler .title h2 {
     font-size: 4rem;
-  }
-
-  .traveler .title h2::before {
-    bottom: -1.25rem;
-    width: 21.6875rem;
   }
 
   .traveler .title p {
@@ -1406,18 +1373,6 @@ MEDIA QUERIES
     margin-top: 5rem;
     margin-right: 2rem;
   }
-
-  .traveler .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .traveler .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Media Query - medium desktops and medias with min with 1440px */
@@ -1435,11 +1390,6 @@ MEDIA QUERIES
 
   .traveler .title h2 {
     font-size: 4rem;
-  }
-
-  .traveler .title h2::before {
-    bottom: -1.25rem;
-    width: 21.6875rem;
   }
 
   .traveler .title p {
@@ -1479,18 +1429,6 @@ MEDIA QUERIES
     margin-top: 5rem;
     margin-right: 2rem;
   }
-
-  .traveler .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .traveler .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Media Query - small desktops and medias with min with 1152px */
@@ -1506,11 +1444,6 @@ MEDIA QUERIES
 
   .traveler .title h2 {
     font-size: 4rem;
-  }
-
-  .traveler .title h2::before {
-    bottom: -1.25rem;
-    width: 21.6875rem;
   }
 
   .traveler .title p {
@@ -1551,17 +1484,6 @@ MEDIA QUERIES
     margin-right: 2rem;
   }
 
-  .traveler .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
-
-  .traveler .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Media Query - Tablets and medias with min with 768px */
@@ -1577,11 +1499,6 @@ MEDIA QUERIES
 
   .traveler .title h2 {
     font-size: 4rem;
-  }
-
-  .traveler .title h2::before {
-    bottom: -1.25rem;
-    width: 21.6875rem;
   }
 
   .traveler .title p {
@@ -1698,19 +1615,6 @@ MEDIA QUERIES
     margin-right: 0rem;
   }
 
-  .traveler .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-
-    margin-right: 1rem;
-  }
-
-  .traveler .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Media Query - Galaxy Fold and medias with min with 220px */
@@ -1726,11 +1630,6 @@ MEDIA QUERIES
 
   .traveler .title h2 {
     font-size: 2.3rem;
-  }
-
-  .traveler .title h2::before {
-    bottom: -1.25rem;
-    width: 15.6875rem;
   }
 
   .traveler .title p {
@@ -1776,18 +1675,6 @@ MEDIA QUERIES
     height: 4.125rem;
   }
 
-  .traveler .owl-carousel .owl-prev span {
-    font-size: 3.5rem;
-    width: 3.75rem;
-    height: 3.125rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-
-  }
-
-  .traveler .owl-carousel .owl-next span {
-    font-size: 3.5rem;
-    padding: 0rem 1.5rem 0.5rem 1.5rem;
-  }
 }
 
 /* Start of footer styling */
@@ -1933,6 +1820,7 @@ footer .newsletter form button:hover {
 
 /* Media Query - Large desktops and medias with min with 1920px */
 @media (min-width: 1920px) {
+
   footer .social-links img {
     margin-right: 1.2rem;
     margin-top: 1rem;
