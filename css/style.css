@@ -122,19 +122,19 @@ body{
   transition: all 0.3s ease-in-out;
 }
 
-.home .hamburger {
+.hamburger {
   background: transparent;
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
 }
 
-.home .hamburger:hover {
+.hamburger:hover {
   opacity: 80%;
   transition: all 0.3s ease-in-out;
 }
 
-.home .hamburger img {
+.hamburger img {
   width: 100%;
 }
 
@@ -187,6 +187,8 @@ body{
   display: flex;
   justify-content: space-between;
   position: relative;
+  width: 100%;
+  height: 60px;
 }
 
 .menu nav {
