@@ -756,6 +756,7 @@ MEDIA QUERIES
 
 .specialOffer {
   height: 74rem;
+  margin-top: -6rem;
 }
 
 .specialOffer .container {
@@ -979,6 +980,9 @@ MEDIA QUERIES
 /* Media Query - Tablets and medias with min with 768px */
 @media (min-width: 768px) and (max-width: 1023px) {
   /* Styling Carousel*/
+  .specialOffer{
+    margin-top: 3.5rem;
+  }
 
   .specialOffer .container .owl-carousel .owl-nav {
     height: 4.125rem;
@@ -1489,6 +1493,7 @@ MEDIA QUERIES
 .traveler .container {
   max-width: 100%;
   height: 100%;
+  margin-top: -6rem;
 }
 
 .traveler .container .title h2 {
@@ -1816,6 +1821,7 @@ MEDIA QUERIES
   /* Start of Traveler Section styling */
   .traveler {
     height: 80rem;
+    margin-top: 7rem;
   }
 
   .traveler .container {
