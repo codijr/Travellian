@@ -1520,9 +1520,9 @@ MEDIA QUERIES
   border-radius: 8px;
   bottom: -100px;
   cursor: pointer;
-  height: 60px;
+  height: 5rem;
   position: absolute;
-  width: 60px;
+  width: 5rem;
 }
 
 .destination-gallery .owl-carousel .owl-nav button.owl-prev {
