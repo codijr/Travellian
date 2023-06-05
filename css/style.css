@@ -578,14 +578,14 @@ MEDIA QUERIES
 }
 
 #popular-destinations .owl-carousel .owl-nav button.owl-prev {
-  left: 115rem;
+  left: 114.5rem;
   right: 180px;
   background-color: var(--blue-900);
   color: var(--white);
 }
 
 #popular-destinations .owl-carousel .owl-nav button.owl-next {
-  left: 123rem;
+  left: 124rem;
   right: 100px;
   background-color: var(--orange-500);
   color: var(--white);
