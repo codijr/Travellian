@@ -2,4 +2,47 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url(home.css);
+@import url(popular-destinations.css);
+@import url(special-offer.css);
+@import url(our-blog.css);
+@import url(trip-planners.css);
+@import url(destination-gallery.css);
+@import url(travelers-experiences.css);
+@import url(newsletter-footer.css);
 
+:root {
+  --white: #ffffff;
+  --gray-300: #767e86;
+  --gray-100: #f5f6f7;
+  --orange-100: #fff8f1;
+  --orange-200: #ffd2c7;
+  --orange-500: #ff7757;
+  --orange-700: #ee6c4f;
+
+  --yellow-100: #ffe8d4;
+
+  --brown-900: #61291c;
+  --brown-1000: #331811;
+
+  --blue-900: #172432;
+
+  --font-display: 'Playfair Display', serif;
+  --defaut-font: 'Rubik', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 1.6rem;
+}

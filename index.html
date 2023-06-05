@@ -1,27 +1,828 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <!-- Jquery and Owl Carousel -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <title>Travellian</title>
+</head>
+
+<body>
+  <!-- Home -->
+  <section class="home">
+    <!-- Header -->
+    <header>
+      <!-- Logo -->
+      <a href="/">
+        <img class="logo" src="/assets/icons/logo.svg"
+          alt="Logo da Travellian, com a Logomarca da empresa e seu nome escrito ao lado." />
+      </a>
+
+      <!-- Navigation -->
+      <nav class="d-none d-xl-flex">
+        <a class="active" href="/">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Travel</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+      </nav>
+
+      <!-- Login Actions -->
+      <div class="d-none d-xl-flex">
+        <a href="#">Login</a>
+        <a class="button" href="#" role="button">Sign Up</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button onclick="openMenu()" aria-label="Abrir menu." class="d-xl-none hamburger">
+        <img src="/assets/icons/hamburger 1.svg" alt="Ícone do menu mobile com 3 linhas paralelas horizontais." />
+      </button>
+    </header>
+
+    <!-- Form -->
+    <div id="content-hero">
+      <h1>Start your unforgettable <br>
+        journey with us.</h1>
+      <p>The best travel for your jouney begins now</p>
+    </div>
+
+    <div id="form">
+      <form>
+        <div class="information-form">
+          <p>Destination</p>
+          <input type="text">
+        </div>
+
+        <div class="information-form">
+          <p>Person</p>
+          <input type="number">
+        </div>
+
+        <div class="information-form">
+          <p>Check in</p>
+          <input type="datetime-local" name="" id="">
+        </div>
+
+        <div class="information-form">
+          <p>Check out</p>
+          <input type="datetime-local" name="" id="">
+        </div>
+      </form>
+      <div id="book-now">
+        <p><a href="#">Book Now</a></p>
+        <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Menu -->
+  <div aria-hidden="true" class="menu" role="menu">
+    <header>
+      <a href="/">
+        <img class="logo" src="/assets/icons/logo.svg"
+          alt="Logo da Travellian, com a Logomarca da empresa e seu nome escrito ao lado." style="width:20rem;" />
+      </a>
+
+      <button onclick="closeMenu()" aria-label="Fechar menu." class="d-xl-none hamburger">
+        <img src="/assets/icons/hamburger 1.svg" alt="Ícone do menu mobile com 3 linhas paralelas horizontais." />
+      </button>
+    </header>
+
+    <nav>
+      <a class="active" href="/">
+        <span>Home</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita." />
+      </a>
+      <hr />
+      <a href="#">
+        <span>Explore</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita." />
+      </a>
+      <hr />
+      <a href="#">
+        <span>Travel</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita." />
+      </a>
+      <hr />
+      <a href="#">
+        <span>Blog</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita." />
+      </a>
+      <hr />
+      <a href="#">
+        <span>Pricing</span>
+        <img src="/assets/icons/chevron-right.svg" alt="Ícone de seta para a direita." />
+      </a>
+    </nav>
+    <hr />
+
+    <div>
+      <a class="button" href="#" role="button">Login</a>
+      <a class="button" href="#" role="button">Sign Up</a>
+    </div>
+  </div>
+  <!-- this is the Home end-->
+
+  <!-- this is the Popular Destinations start-->
+  <section id="popular-destinations">
+    <div id="content-popular-destinations">
+      <h1>Popular Destinations</h1>
+      <hr>
+      <p>Most popular destinations around the world, from historical places to natural wonders.</p>
+    </div>
+
+    <div id="carousel-popular-destinations">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="assets/img/Col-block-2.png">
+          <div class="content-item">
+            <p>Monument of Berlin</p>
+            <p class="location"><img src="assets/icons/location.svg"> Berlim, Germany</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/Col-block-3.png">
+          <div class="content-item">
+            <p class="title">Millennium Bridge</p>
+            <p class="location" id="location1"><img src="assets/icons/location.svg"> London, United Kingdom</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/Col-block-1.png">
+          <div class="content-item">
+            <p>Rialto Bridge</p>
+            <p class="location"><img src="assets/icons/location.svg"> Venice, Italy</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/Col-block.png">
+          <div class="content-item">
+            <p>Sea of Orange Tiles</p>
+            <p class="location"><img src="assets/icons/location.svg"> Lisbon, Portugal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- this is the Popular Destinations end-->
+
+  <!-- this is the specialOffer start-->
+  <section class="specialOffer">
+    <!-- this is the container start -->
+    <div class="container">
+      <!-- this is the title start -->
+      <div class="title">
+        <h2>Special Offer</h2>
+        <p>Check out our special offer and discounts</p>
+      </div>
+      <!-- this is the title end -->
+      <!-- this is the carousel start -->
+      <div class="owl-carousel owl-theme">
+
+        <!-- Carousel Controls -->
+        <div id="carouselControls" class="carousel" data-bs-ride="carousel"></div>
+
+        <!-- this is the carousel item 1 start -->
+        <div class="item">
+          <div class="card">
+            <img src="assets/img/Image Container-3.png" class="card-img-top" />
+            <div class="card-body">
+              <!-- this is card-body start-->
+              <div class="card-title">Lisbon, Portugal</div>
+
+              <div class="row stars">
+                <!-- this is div stars start-->
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+              </div>
+              <!-- this is div stars end-->
+
+              <p class="card-text">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and
+                going through the cites of the world in classical literature.
+              </p>
+
+              <!-- this is footer start-->
+              <div class="footer">
+                <!-- this is price start-->
+                <div class="price">
+                  <span> From </span>
+                  <h6>€500</h6>
+                </div>
+                <!-- this is price end-->
+
+                <button class="details">
+                  DETAILS
+                </button>
+              </div> <!-- this is footer end-->
+            </div>
+            <!-- this is card-body end-->
+          </div>
+        </div>
+        <!-- this is the carousel item 1 end -->
+
+        <!-- this is the carousel item 2 start -->
+        <div class="item">
+          <div class="card">
+            <img src="assets/img/Image Container-4.png" class="card-img-top" />
+            <div class="card-body">
+              <!-- this is card-body start-->
+              <div class="card-title">Athens, Greece</div>
+
+              <div class="row stars">
+                <!-- this is div stars start-->
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+              </div>
+              <!-- this is div stars end-->
+
+              <p class="card-text">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and
+                going through the cites of the world in classical literature.
+              </p>
+
+              <!-- this is footer start-->
+              <div class="footer">
+                <!-- this is price start-->
+                <div class="price">
+                  <span> From </span>
+                  <h6>€800</h6>
+                </div>
+                <!-- this is price end-->
+
+                <button class="details">
+                  DETAILS
+                </button>
+              </div> <!-- this is footer end-->
+            </div>
+            <!-- this is card-body end-->
+          </div>
+        </div>
+        <!-- this is the carousel item 2 end -->
+
+        <!-- this is the carousel item 3 start -->
+        <div class="item">
+          <div class="card">
+            <img src="assets/img/Image Container-5.png" class="card-img-top" />
+            <div class="card-body">
+              <!-- this is card-body start-->
+              <div class="card-title">Rome, Italy</div>
+
+              <div class="row stars">
+                <!-- this is div stars start-->
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+              </div>
+              <!-- this is div stars end-->
+
+              <p class="card-text">
+                5 nights and 4 days in 5 star hotel, breakfast and lunch
+                included. Very popular during the renaissance. Passage and
+                going through the cites of the world in classical literature.
+              </p>
+
+              <!-- this is footer start-->
+              <div class="footer">
+                <!-- this is price start-->
+                <div class="price">
+                  <span> From </span>
+                  <h6>€750</h6>
+                </div>
+                <!-- this is price end-->
+
+                <button class="details">
+                  DETAILS
+                </button>
+              </div> <!-- this is footer end-->
+
+            </div>
+            <!-- this is card-body end-->
+          </div>
+        </div>
+        <!-- this is the carousel item 3 end -->
+      </div>
+      <!-- this is the container end -->
+    </div>
+  </section>
+  <!-- this is the specialOffer end -->
+
+  <!-- this is the Our Blog start-->
+  <section id="our-blog">
+    <div class="header-our-blog">
+      <h1>Our Blog</h1>
+      <hr>
+      <p>An insight the incredible experience in the world</p>
+    </div>
+    <div id="content-our-blog">
+      <div id="img-ourblog">
+        <img src="assets/img/Image Container-6.png" alt="">
+      </div>
+      <div id="content-text-ourblog">
+        <h2>Beautiful Italy <br>Let's travel
+        </h2>
+
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+          will give you a complete account of the system and expound the actual teachings of the great explorer of the
+          truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it
+          is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that
+          are extremly painful. Nor again is there anyone who loves or pursues.</p>
+        <div id="read-more">
+          <p>
+            <a id="read-more-button" href="#">
+              Read More
+              <i class="fa-solid fa-arrow-right read-more-icon"></i>
+            </a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- this is the Our Blog end-->
+
+  <!-- this is Trip Planners start -->
+  <section class="trip_planners">
+    <div>
+      <h2>Trip Planners</h2>
+      <hr />
+      <p>
+        20 years from now you will be more disappointed by the things that you
+        didn't do. Stop regretting and start traveling, start throwing off the
+        bowlines.
+      </p>
+      <button>View all trip plans</button>
+    </div>
+
+    <!-- Trip Cards -->
+    <ul>
+      <li class="trip_card">
+        <img src="/assets/img/Image Container-7.png"
+          alt="Imagem do Coliseu de Roma, uma estrutura circular com diversos arcos em suas entradas e janelas dispostas por toda a estrutura, feita de tijolos acinzentados teto aberto." />
+
+        <!-- This image will be rendered on tablet devices -->
+        <img class="tablet" src="/assets/img/Image Container-7(tablet).png"
+          alt="Imagem do Coliseu de Roma, uma estrutura circular com diversos arcos em suas entradas e janelas dispostas por toda a estrutura, feita de tijolos acinzentados teto aberto." />
+
+        <div class="info">
+          <div>
+            <p>GUIDED TOUR</p>
+
+            <p>€99/Day</p>
+          </div>
+
+          <strong>Rome City Tour</strong>
+
+          <div class="rate">
+            <span>
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+            </span>
+
+            <p>7 Days tour</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="trip_card">
+        <img src="/assets/img/Col-block-4.png"
+          alt="Imagem da Torre Eiffel, uma torre triangular feita de metal que está centralizada em uma famosa praça da França, vista de uma rua que o leva em direção a ela." />
+
+        <!-- This image will be rendered on tablet devices -->
+        <img class="tablet" src="/assets/img/Col-block-4(tablet).png"
+          alt="Imagem da Torre Eiffel, uma torre triangular feita de metal que está centralizada em uma famosa praça da França, vista de uma rua que o leva em direção a ela." />
+
+        <div class="info show">
+          <div>
+            <p>GUIDED TOUR</p>
+
+            <p>€95/Day</p>
+          </div>
+
+          <strong>Paris City Tour</strong>
+
+          <div class="rate">
+            <span>
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+            </span>
+
+            <p>7 Days tour</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="trip_card">
+        <img src="/assets/img/Image Container-8.png"
+          alt="Imagem com uma vista panorâmica de cima sobre a cidade de Barcelona, apresentado seus prédios que formam quadrados com seus pátios no meio da estrutura, envoltos de fachadas clássicas e elegantes." />
+
+        <!-- This image will be rendered on tablet devices -->
+        <img class="tablet" src="/assets/img/Image Container-8(tablet).png"
+          alt="Imagem com uma vista panorâmica de cima sobre a cidade de Barcelona, apresentado seus prédios que formam quadrados com seus pátios no meio da estrutura, envoltos de fachadas clássicas e elegantes." />
+
+        <div class="info">
+          <div>
+            <p>GUIDED TOUR</p>
+
+            <p>€89/Day</p>
+          </div>
+
+          <strong>Barcelona City Tour</strong>
+
+          <div class="rate">
+            <span>
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+            </span>
+
+            <p>7 Days tour</p>
+          </div>
+        </div>
+      </li>
+
+      <li class="trip_card">
+        <img src="/assets/img/Image Container-9.png"
+          alt="Imagem de uma das diversas praças de Budapeste, com o monumento de uma pessoa em cima de um cavalo, por cima de outras esculturas em mármore." />
+
+        <!-- This image will be rendered on tablet devices -->
+        <img class="tablet" src="/assets/img/Image Container-9(tablet).png"
+          alt="Imagem de uma das diversas praças de Budapeste, com o monumento de uma pessoa em cima de um cavalo, por cima de outras esculturas em mármore." />
+
+        <div class="info">
+          <div>
+            <p>GUIDED TOUR</p>
+
+            <p>€89/Day</p>
+          </div>
+
+          <strong>Budapest City Tour</strong>
+
+          <div class="rate">
+            <span>
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+              <img src="/assets/icons/star 1.svg" alt="Ícone de estrela." />
+            </span>
+
+            <p>7 Days tour</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- this is the Trip Planners end-->
+
+  <!-- this is the Destination Gallery start-->
+  <section class="destination-gallery">
+
+    <div class="info">
+      <h2>Destination Gallery</h2>
+      <hr>
+      <p>Our photo gallery on trip</p>
+    </div>
+
+
+    <ul class="owl-carousel">
+      <li class="item">
+        <img src="assets/img/Image Container-2.png" alt="">
+      </li>
+      <li class="item">
+        <img src="assets/img/Img.png" alt="">
+      </li>
+      <li class="item">
+        <img src="assets/img/Image Container.png" alt="">
+      </li>
+      <li class="item">
+        <img src="assets/img/Image Container-1.png" alt="">
+      </li>
+    </ul>
+  </section>
+  <!-- this is the Destination Gallery end-->
+
+  <!-- this is the traveler experiences start-->
+  <section class="traveler">
+    <!-- this is the container start -->
+    <div class="container">
+      <!-- this is the title start -->
+      <div class="title">
+        <h2>Traveler's Experiences</h2>
+        <hr>
+        <p>Here some awesome feedback from our travelers</p>
+      </div>
+      <!-- this is the title end -->
+
+      <!-- this is the carousel start -->
+      <div class="owl-carousel owl-theme">
+
+        <!-- this is the carousel item 1 start -->
+        <div class="item">
+          <div class="card-box"> <!-- this is card-box start-->
+            <div class="img-area">
+              <img src="/assets/img/Avatar.png" alt="" />
+            </div>
+            <div class="card-container"> <!-- this is content start-->
+              <p class="content">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will
+                give you a complete account of the system and expound the
+                actual teachings of the great explorer of the truth, the
+                master- builder of human happiness.
+              </p> <!-- this is content end-->
+              <div class="row stars"> <!-- this is div stars start-->
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+              </div> <!-- this is div stars end-->
+
+              <!-- this is profile testimunial start -->
+              <h6 class="person-name">John Doe</h6>
+              <span>Accountant</span>
+              <!-- this is profile testimunial end -->
+            </div> <!-- this is content end-->
+          </div> <!-- this is card-box end-->
+        </div>
+        <!-- this is the carousel item 1 end -->
+
+        <!-- this is the carousel item 2 start -->
+        <div class="item">
+          <div class="card-box"> <!-- this is card-box start-->
+            <div class="img-area">
+              <img src="/assets/img/Avatar-1.png" alt="" />
+            </div>
+            <div class="card-container">
+              <p class="content"> <!-- this is content start-->
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will
+                give you a complete account of the system and expound the
+                actual teachings of the great explorer of the truth, the
+                master- builder of human happiness.
+              </p> <!-- this is content end-->
+              <div class="row stars"> <!-- this is div stars start-->
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+              </div> <!-- this is div stars end-->
+
+              <!-- this is profile testimunial start -->
+              <h6 class="person-name">John Smith</h6>
+              <span>Journalist, HWO News</span>
+              <!-- this is profile testimunial end -->
+            </div> <!-- this is content end-->
+          </div> <!-- this is card-box end-->
+        </div>
+        <!-- this is the carousel item 2 end -->
+
+        <!-- this is the carousel item 3 start -->
+        <div class="item">
+          <div class="card-box"> <!-- this is card-box start-->
+            <div class="img-area">
+              <img src="/assets/img/Avatar-2.png" alt="" />
+            </div>
+            <div class="card-container"> <!-- this is content start-->
+              <p class="content">
+                But I must explain to you how all this mistaken idea of
+                denouncing pleasure and praising pain was born and I will
+                give you a complete account of the system and expound the
+                actual teachings of the great explorer of the truth, the
+                master- builder of human happiness.
+              </p> <!-- this is content end-->
+              <div class="row stars"> <!-- this is div stars start-->
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+                <div class="col col-lg-1 col-md-2 col-sm-1">
+                  <img src="/assets/icons/star 1.svg" alt="" />
+                </div>
+              </div> <!-- this is div stars end-->
+
+              <!-- this is profile testimunial start -->
+              <h6 class="person-name">Tamara Bellis</h6>
+              <span>Managing Director, JTH</span>
+              <!-- this is profile testimunial end -->
+            </div> <!-- this is content end-->
+          </div> <!-- this is card-box end-->
+        </div>
+        <!-- this is the carousel item 3 end -->
+
+        <!-- Carousel Controls -->
+        <div id="carouselControls" class="carousel" data-bs-ride="carousel"></div>
+      </div>
+      <!-- this is the carousel end -->
+      <!-- this is the container end -->
+    </div>
+    <!-- this is the Travelers Experiences end-->
+
+    <!-- this is Footer + Newsletter start-->
+    <footer>
+      <!-- this the container newsletter start -->
+      <div class="container-newsletter">
+        <!-- this the newsletter start -->
+        <div class="newsletter justify-content-center" style="width: 90rem;">
+          <h3>Our Newsletter</h3>
+          <form action="">
+            <div class="form">
+              <label for="inputNewsletter" class="form-label">Email</label>
+              <div class="form-detail">
+                <input type="email" class="form-control" id="inputNewsletter" placeholder="Enter your email" />
+                <button type="submit" class="btn btn1">Subscribe</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- this the newsletter end -->
+      </div>
+      <!-- this the container newsletter end -->
+
+      <!-- this is the footer start-->
+      <div class="footer">
+        <!-- this is the container footer div start -->
+        <div class="container">
+          <!-- this is the row grid start -->
+          <div class="row">
+            <!-- this is col footer start -->
+            <div class="footer-col col">
+              <img src="./assets/icons/logo.svg" alt="" srcset="" />
+              <p>Copyright © Travellian 2020 All rights reserved</p>
+            </div>
+            <!-- this is col footer end -->
+            <!-- this is the start of the 2nd column -->
+            <div class="footer-col col">
+              <h4>Menu</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <!-- this is the end of the 2nd column -->
+            <!-- this is the start of the 3nd column -->
+            <div class="footer-col col">
+              <h4>Information</h4>
+              <ul>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+            </div>
+            <!-- this is the end of the 3nd column -->
+            <!-- this is the start of the 4nd column -->
+            <div class="footer-col col">
+              <h4>Contact Info</h4>
+              <ul>
+                <li><a href="#">+123 456 789</a></li>
+                <li><a href="#">info@travellian.com</a></li>
+                <li><a href="#">1245, New Yourk, USA</a></li>
+              </ul>
+            </div>
+            <!-- this is the end of the 4nd column -->
+            <!-- this is the start of the 5nd column -->
+            <div class="footer-col col">
+              <h4>Follow us on</h4>
+              <div class="social-links">
+                <a href="#">
+                  <img src="./assets/icons/facebook 1.svg" alt="Facebook Icon" /></a>
+                <a href="#">
+                  <img src="./assets/icons/pinterest 1.svg" alt="Pinterest Icon" /></a>
+                <a href="#">
+                  <img src="./assets/icons/instagram 1.svg" alt="Instagram Icon" /></a>
+                <a href="#">
+                  <img src="./assets/icons/twitter 1.svg" alt="Twitter Icon" /></a>
+              </div>
+            </div>
+            <!-- this is the end of the 5nd column -->
+          </div>
+          <!-- this is the row grid end -->
+        </div>
+        <!-- this is the container grid end -->
+      </div>
+    </footer>
+    <!-- this is Footer + Newsletter end-->
+
+    <!-- Option 1: Bootstrap Bundle with Owl Carousel/Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Travellian</title>
-    
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
 
-  <body>
-
-    <h1>Hello, world!</h1>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-  </body>
+    <!-- Scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/carousel.js"></script>
+    <script src="https://kit.fontawesome.com/031d3efb46.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
