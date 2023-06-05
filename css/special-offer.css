@@ -33,7 +33,7 @@
   font-family: 'Playfair Display', serif;
   color: var(--blue-900);
   position: relative;
-  font-size: 6rem;
+  font-size: 5.5rem;
   display: flex;
   justify-content: right;
   margin-bottom: 6rem;
@@ -301,6 +301,9 @@
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
+  .specialOffer{
+    margin-bottom: 4rem;
+  }
   .specialOffer .container .title h2 {
     margin-right: 5.8rem;
   }
@@ -321,11 +324,18 @@
 
 @media (min-width: 375px) and (max-width: 424px) {
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
-    margin-left: 11rem;
+    margin-left: 9rem;
     margin-right: 0.5rem;
   }
   .specialOffer .container .title h2::before {
     left: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  .specialOffer{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -338,7 +348,7 @@
     left: 0rem;
   }
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
-    margin-left: 8rem;
+    margin-left: 6rem;
   }
   .specialOffer .container .owl-carousel .owl-nav button.owl-next {
     margin-left: 1.5rem;

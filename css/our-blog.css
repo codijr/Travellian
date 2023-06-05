@@ -165,6 +165,12 @@
   }
 }
 
+@media (min-width: 375px) and (max-width: 425px) {
+  #our-blog{
+    margin-bottom: 4rem;
+  }
+}
+
 @media (min-width: 375px) and (max-width: 384px) {
   #our-blog {
     margin-top: 14rem;
@@ -176,3 +182,4 @@
     margin-top: 16rem;
   }
 }
+
