@@ -57,7 +57,7 @@ footer .footer {
   background-color: var(--blue-900);
   color: var(--white);
   margin-left: -2rem;
-  margin-right: -2rem;
+  margin-right: -1.3rem;
 }
 
 footer .footer .row {
