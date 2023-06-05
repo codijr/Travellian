@@ -56,6 +56,8 @@ footer h4 {
 footer .footer {
   background-color: var(--blue-900);
   color: var(--white);
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
 footer .footer .row {
