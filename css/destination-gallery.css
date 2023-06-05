@@ -28,7 +28,7 @@
 .destination-gallery .info h2 {
   color: var(--blue-900);
   font-family: 'Playfair Display', sans-serif;
-  font-size: 40px;
+  font-size: 5.5rem;
 }
 
 .destination-gallery .info hr {
