@@ -238,6 +238,12 @@
   }
 }
 
+@media(min-width:1152px){
+  .traveler{
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+}
 /* Media Query - small desktops and medias with min with 1152px */
 @media (min-width: 1024px) and (max-width: 1439px) {
   /* Start of Traveler Section styling */

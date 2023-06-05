@@ -157,6 +157,13 @@
       top: -18rem;
     }
   }
+
+  @media (min-width: 1152px) {
+    #popular-destinations {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
   
   @media (max-width: 1024px) and (max-width: 1151px) {
     #popular-destinations .owl-carousel .owl-nav button.owl-prev {

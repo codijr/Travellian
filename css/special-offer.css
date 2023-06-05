@@ -209,6 +209,10 @@
 }
 
 @media (min-width: 1152px) and (max-width: 1439px) {
+  .specialOffer{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .specialOffer .container .title hr {
     margin-left: 90.5rem;
     position: static;
