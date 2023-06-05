@@ -1,0 +1,478 @@
+:root {
+    --white: #ffffff;
+    --gray-300: #767e86;
+    --gray-100: #f5f6f7;
+    --orange-100: #fff8f1;
+    --orange-200: #ffd2c7;
+    --orange-500: #ff7757;
+    --orange-700: #ee6c4f;
+  
+    --yellow-100: #ffe8d4;
+  
+    --brown-900: #61291c;
+    --brown-1000: #331811;
+  
+    --blue-900: #172432;
+  
+    --font-display: 'Playfair Display', serif;
+    --defaut-font: 'Rubik', sans-serif;
+  }
+
+.home {
+    background-image: url(../assets/img/Hero\ Section.png);
+    min-height: 100vh;
+  }
+  
+  .home header {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 20px 32px;
+    width: 100%;
+  }
+  
+  .home header a {
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .home header .logo {
+    width: 140px;
+  }
+  
+  .home header nav {
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .home header nav a.active {
+    font-weight: 500;
+  }
+  
+  .home header nav a.active::after {
+    background: var(--orange-500);
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+  }
+  
+  .home header nav a:not(.active):hover::after {
+    animation: slideLeft 0.2s ease-out;
+    background: var(--orange-500);
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+  }
+  
+  @keyframes slideLeft {
+    from {
+      width: 0px;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  .home header div {
+    align-items: center;
+    gap: 36px;
+  }
+  
+  .home header div a:not(.button):hover {
+    opacity: 80%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .home header div .button {
+    background-color: var(--orange-500);
+    border-radius: 6px;
+    color: var(--white);
+    padding: 12px 24px;
+  }
+  
+  .home header div .button:hover {
+    background-color: var(--orange-700);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger {
+    background: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .hamburger:hover {
+    opacity: 80%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger img {
+    width: 100%;
+  }
+  
+  @media (min-width: 769px) {
+    .home header {
+      padding: 36px 32px;
+    }
+  
+    .home header .logo {
+      width: 200px;
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .home header {
+      padding: 40px 182px;
+    }
+  }
+  
+  .menu {
+    align-items: center;
+    background-color: var(--orange-500);
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    background-color: var(--orange-500);
+  }
+  
+  .menu.opened {
+    animation: swipeDown 0.3s ease-in-out;
+    display: flex;
+    top: 0;
+  }
+  
+  @keyframes swipeDown {
+    from {
+      transform: translateY(-100%);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .menu header {
+    align-items: center;
+    background-image: url(../assets/img/Hero\ Section.png);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 60px;
+  }
+  
+  .menu nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    width: 100%;
+  }
+  
+  .menu nav a {
+    align-items: center;
+    background-color: var(--orange-500);
+    color: #ffffff;
+    display: flex;
+    font-weight: 400;
+    justify-content: space-between;
+    padding: 16px 20px;
+    text-decoration: none;
+  }
+  
+  .menu nav a img {
+    opacity: 0;
+    width: 40px;
+  }
+  
+  .menu nav a:hover {
+    background-color: var(--orange-400);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu nav a:hover > img {
+    animation: slideRight 0.15s ease-in-out forwards;
+    opacity: 1;
+  }
+  
+  @keyframes slideRight {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(10px);
+    }
+  }
+  
+  .menu nav a.active {
+    font-weight: 500;
+  }
+  
+  .menu nav hr {
+    border: 1px solid var(--white);
+    margin: 0;
+    opacity: 0.5;
+  }
+  
+  .menu div {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 12px 20px;
+    width: 100%;
+  }
+  
+  .menu > hr {
+    border: 1px solid var(--white);
+    margin: 20px 0;
+    opacity: 0.5;
+    width: 60%;
+  }
+  
+  .menu div a {
+    background: var(--white);
+    border-radius: 6px;
+    color: var(--black);
+    font-weight: 500;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .menu div a:hover {
+    opacity: 80%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /*============
+  HERO CONTENT 
+  ============*/
+  #content-hero {
+    padding-top: 10rem;
+  }
+  
+  #content-hero > h1 {
+    color: var(--white);
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+  
+  #content-hero > p {
+    color: var(--white);
+    font-family: var(--defaut-font);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  
+  #form {
+    display: flex;
+    margin-top: 17rem;
+  }
+  
+  #form form {
+    position: relative;
+    background-color: var(--white);
+    height: 21.6rem;
+    max-width: 95rem;
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 7rem 0 7rem 2rem;
+    font-family: var(--defaut-font);
+    margin-bottom: 20rem;
+  }
+  
+  #form form p {
+    text-transform: uppercase;
+    color: #767e86;
+  }
+  
+  #form form input {
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+  }
+  
+  #form #book-now {
+    background-color: var(--orange-500);
+    width: 17rem;
+    height: 216px;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+  }
+  
+  #form #book-now:hover {
+    filter: saturate(1.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  #form #book-now p {
+    font-size: 3.6rem;
+    font-family: var(--font-display);
+    color: var(--white);
+    width: 8.5rem;
+    margin: 0;
+  }
+  
+  #form #book-now p a {
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  #form #book-now i {
+    font-size: 3rem;
+  }
+  
+  /*============
+  MEDIA QUERIES 
+  ============*/
+  
+  @media (min-width: 1441px) and (max-width: 1920px) {
+    #content-hero {
+      padding-left: 1.8rem;
+      margin-left: auto;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    #content-hero {
+      padding-left: 1.8rem;
+      margin-left: auto;
+    }
+  }
+  
+  @media (max-width: 1235px) {
+    #form form {
+      height: 176px;
+      padding: 5rem 0 5rem 2rem;
+    }
+  
+    #form #book-now {
+      height: 176px;
+    }
+  }
+  
+  @media (max-width: 1152px) {
+    #content-hero > h1 {
+      font-size: 6.4rem;
+      line-height: 8.5rem;
+    }
+  }
+  
+  @media (max-width: 1080px) {
+    #form form {
+      width: 950px;
+      height: 215px;
+      padding: 2rem 0 5rem 9rem;
+      gap: 2.5rem;
+    }
+  
+    #form #book-now {
+      height: 216px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    #form form {
+      width: 700px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #content-hero > h1 {
+      font-size: 5.4rem;
+      line-height: 7.2rem;
+    }
+  
+    #content-hero > p {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  
+    #form form {
+      width: 500px;
+      height: 216px;
+      padding: 3.5rem 0 5rem 2rem;
+      gap: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 585px) {
+    #form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 12rem;
+      padding-bottom: 8rem;
+    }
+  
+    #form form {
+      display: flex;
+      justify-content: center;
+      width: 288px;
+      height: 595px;
+      padding: 0px 0 50px 0;
+      border-radius: 10px 10px 0 0;
+      gap: 0;
+    }
+  
+    #form .information-form {
+      padding: 2.5rem 0;
+      margin-bottom: 0.8rem;
+    }
+  
+    #form #book-now {
+      width: 288px;
+      height: 128px;
+      border-radius: 0 0 10px 10px;
+      margin-top: -20rem;
+    }
+  
+    #form #book-now p {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 507px) {
+    #content-hero {
+      font-size: 4rem;
+      line-height: 5 3rem;
+      font-weight: lighter;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    #content-hero > h1 {
+      font-size: 4rem;
+      line-height: 5.3rem;
+      font-weight: lighter;
+    }
+  
+    #content-hero > p {
+      font-size: 1.8rem;
+      line-height: 2.1rem;
+    }
+  }

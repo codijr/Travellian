@@ -1,0 +1,371 @@
+:root {
+    --white: #ffffff;
+    --gray-300: #767e86;
+    --gray-100: #f5f6f7;
+    --orange-100: #fff8f1;
+    --orange-200: #ffd2c7;
+    --orange-500: #ff7757;
+    --orange-700: #ee6c4f;
+  
+    --yellow-100: #ffe8d4;
+  
+    --brown-900: #61291c;
+    --brown-1000: #331811;
+  
+    --blue-900: #172432;
+  
+    --font-display: 'Playfair Display', serif;
+    --defaut-font: 'Rubik', sans-serif;
+  }
+
+.specialOffer {
+  height: 74rem;
+  margin-top: -6rem;
+}
+
+.specialOffer .container {
+  height: 100%;
+  max-width: 130rem;
+  padding: 8.75rem 0rem 28.75rem 0rem;
+}
+
+.specialOffer .title h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--blue-900);
+  position: relative;
+  font-size: 6rem;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 6rem;
+}
+
+.specialOffer .container .title h2::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  background-color: var(--orange-500);
+  height: 2px;
+  box-sizing: border-box;
+  bottom: -2.5rem;
+  width: 21.6875rem;
+  display: flex;
+  justify-content: right;
+}
+
+.specialOffer .title p {
+  margin-top: 3.25rem;
+  font-size: 1.8rem;
+  font-family: var(--defaut-font);
+  font-weight: 400;
+  color: var(--gray-300);
+  display: flex;
+  justify-content: right;
+}
+
+.specialOffer .card {
+  width: 31.0625rem;
+
+  background-color: var(--orange-100);
+  border: 0;
+}
+
+.specialOffer .card-body {
+  padding: 2rem;
+}
+
+.specialOffer .card-title {
+  font-weight: 400;
+
+  color: var(--gray-300);
+  font-size: 1.75rem;
+}
+
+.specialOffer .card .stars img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.specialOffer .card-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.125rem;
+  margin: 2rem 0rem 2rem 0rem;
+  font-size: 1.125rem;
+}
+
+.specialOffer .card-img-top {
+  border-radius: 16px;
+}
+
+.specialOffer .price {
+  display: flex;
+
+  align-items: center;
+}
+
+.specialOffer .price span {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.25rem;
+
+  color: var(--gray-300);
+  margin-right: 8px;
+}
+
+.specialOffer .price h6 {
+  font-size: 2.5rem;
+  color: var(--orange-500);
+}
+
+.specialOffer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialOffer .details {
+  background-color: var(--orange-500);
+  border: 0;
+  border-radius: 12px;
+
+  width: 9.9375rem;
+
+  color: var(--white);
+  margin-right: 1.5rem;
+}
+
+.specialOffer .details:hover {
+  background-color: var(--orange-700);
+}
+
+.specialOffer .container .owl-carousel {
+  height: 100%;
+
+  margin-top: 6.25rem;
+}
+
+.specialOffer .container .owl-carousel .owl-nav {
+  display: flex;
+  justify-content: start;
+
+  position: absolute;
+  top: -16rem;
+  margin-left: 1.5rem;
+}
+.specialOffer .container .owl-carousel .owl-nav button.owl-prev,
+.specialOffer .container .owl-carousel .owl-nav button.owl-next {
+  position: relative;
+}
+
+.specialOffer .container .owl-carousel .owl-nav button.owl-next {
+  margin-left: 2rem;
+}
+
+.specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: var(--blue-900);
+  color: var(--white);
+  border-radius: 8px;
+  margin-right: 1.5rem;
+}
+
+.specialOffer .container .owl-carousel .owl-nav button.owl-prev:hover {
+  background-color: #101822;
+  transition: all 0.3s ease-in-out;
+}
+
+.specialOffer .container .owl-carousel .owl-nav button.owl-next {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  background-color: var(--orange-500);
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.specialOffer .container .owl-carousel .owl-nav button.owl-next:hover {
+  background-color: var(--orange-700);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1920px) {
+  .specialOffer .container {
+    width: 100%;
+  }
+
+  .specialOffer .container .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+
+@media (min-width: 1440px) and (max-width: 2560px) {
+  .specialOffer .container .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width: 1152px) and (max-width: 1439px) {
+  .specialOffer .container .title hr {
+    margin-left: 90.5rem;
+    position: static;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .specialOffer .container .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .specialOffer .container .title h2 {
+    margin-right: 1.5rem;
+  }
+  .specialOffer .container .title p {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .specialOffer {
+    margin-top: 3.5rem;
+  }
+
+  .specialOffer .container .owl-carousel .owl-nav {
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .specialOffer .container .title h2 {
+    margin-right: 1.5rem;
+  }
+  .specialOffer .container .title p {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .specialOffer {
+    margin-top: 1rem;
+  }
+
+  .specialOffer .container .owl-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+
+    height: 4.125rem;
+    margin-top: 5rem;
+    margin-right: 0rem;
+  }
+
+  .specialOffer .container .title h2 {
+    margin-right: 2rem;
+  }
+  .specialOffer .container .title p {
+    margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev,
+  .specialOffer .container .owl-carousel .owl-nav button.owl-next {
+    margin-top: 55rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 30rem;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 670px) {
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 25rem;
+  }
+}
+
+@media (min-width: 419px) and (max-width: 570px) {
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 20rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 13.5rem;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .specialOffer .container .title h2 {
+    margin-right: 5.8rem;
+  }
+
+  .specialOffer .container .title p {
+    margin-right: 5.8rem;
+  }
+
+  .specialOffer .container .title h2::before {
+    left: 2.2rem;
+  }
+
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 13.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 11rem;
+    margin-right: 0.5rem;
+  }
+  .specialOffer .container .title h2::before {
+    left: 1rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .specialOffer .container .title h2,
+  .specialOffer .container .title p {
+    margin-left: 1.5rem;
+  }
+  .specialOffer .container .title h2::before {
+    left: 0rem;
+  }
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 8rem;
+  }
+  .specialOffer .container .owl-carousel .owl-nav button.owl-next {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 319px) {
+  .specialOffer .container .owl-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    height: 4.125rem;
+  }
+
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 8.5rem;
+    margin-top: 52rem;
+  }
+  .specialOffer .container .owl-carousel .owl-nav button.owl-next {
+    margin-top: 52rem;
+  }
+  .specialOffer .container .title h2 {
+    margin-left: 25rem;
+    display: flex;
+  }
+  .specialOffer .container .title p {
+    margin-left: 14rem;
+    margin-top: 2rem;
+  }
+}
