@@ -101,7 +101,7 @@ footer .container-newsletter {
 }
 
 footer .newsletter h3 {
-  width: 70vh;
+  width: 100%;
   font-size: 4rem;
   font-family: 'Playfair Display', serif;
   color: var(--gray-300);
@@ -643,7 +643,7 @@ footer .newsletter form button:hover {
   }
 
   footer .newsletter h3 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   footer .newsletter form {
