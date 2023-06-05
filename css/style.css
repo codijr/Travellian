@@ -513,9 +513,7 @@ MEDIA QUERIES
 
 #popular-destinations #content-popular-destinations hr {
   width: 356px;
-  background-color: var(--orange-500);
-  height: 3px;
-  border: 0;
+  border: 1px solid var(--orange-500);
   opacity: 1;
   margin: 20px 0 32px;
 }
@@ -723,12 +721,12 @@ MEDIA QUERIES
 
 @media (min-width: 425px) and (max-width: 767px) {
   #popular-destinations .owl-carousel .owl-nav button.owl-prev {
-    left: 13rem;
+    left: 12.5rem;
     top: 37rem;
   }
 
   #popular-destinations .owl-carousel .owl-nav button.owl-next {
-    left: 21rem;
+    left: 20rem;
     top: 37rem;
   }
 }
@@ -740,19 +738,19 @@ MEDIA QUERIES
   }
 
   #popular-destinations .owl-carousel .owl-nav button.owl-next {
-    left: 18rem;
+    left: 17.5rem;
     top: 37rem;
   }
 }
 
 @media (min-width: 320px) and (max-width: 374px) {
   #popular-destinations .owl-carousel .owl-nav button.owl-prev {
-    left: 7.5rem;
+    left: 7rem;
     top: 37rem;
   }
 
   #popular-destinations .owl-carousel .owl-nav button.owl-next {
-    left: 15.5rem;
+    left: 15rem;
     top: 37rem;
   }
 }
@@ -1028,9 +1026,6 @@ MEDIA QUERIES
   .specialOffer .container .owl-carousel .owl-nav button.owl-next {
     margin-top: 55rem;
   }
-  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
-    margin-left: 13rem;
-  }
 }
 
 @media (min-width: 426px) and (max-width: 767px) {
@@ -1069,11 +1064,17 @@ MEDIA QUERIES
   .specialOffer .container .title h2::before {
     left: 2.2rem;
   }
+
+  .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
+    margin-left: 13.5rem;
+    margin-right: 0.5rem;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 424px) {
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
-    margin-left: 10rem;
+    margin-left: 11rem;
+    margin-right: 0.5rem;
   }
   .specialOffer .container .title h2::before {
     left: 1rem;
@@ -1089,7 +1090,10 @@ MEDIA QUERIES
     left: 0rem;
   }
   .specialOffer .container .owl-carousel .owl-nav button.owl-prev {
-    margin-left: 8.5rem;
+    margin-left: 8rem;
+  }
+  .specialOffer .container .owl-carousel .owl-nav button.owl-next {
+    margin-left: 1.5rem;
   }
 }
 
@@ -1574,11 +1578,11 @@ MEDIA QUERIES
 
 @media (min-width: 320px) {
   .destination-gallery .owl-carousel .owl-nav button.owl-prev {
-    left: 32%;
+    left: 28%;
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-next {
-    right: 22%;
+    right: 28%;
   }
 }
 
@@ -1588,17 +1592,17 @@ MEDIA QUERIES
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-next {
-    right: 28%;
+    right: 32%;
   }
 }
 
 @media (min-width: 425px) {
   .destination-gallery .owl-carousel .owl-nav button.owl-prev {
-    left: 33%;
+    left: 34%;
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-next {
-    right: 32%;
+    right: 34%;
   }
 }
 
@@ -1616,11 +1620,11 @@ MEDIA QUERIES
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-prev {
-    left: 40%;
+    left: 41%;
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-next {
-    right: 40%;
+    right: 42%;
   }
 }
 
@@ -1899,6 +1903,14 @@ MEDIA QUERIES
     margin-top: 5rem;
     margin-right: 2rem;
   }
+
+  .traveler .owl-carousel .owl-nav button.owl-next {
+    margin-right: 4rem;
+  }
+
+  .traveler .owl-carousel .owl-nav button.owl-prev {
+    margin-right: 3rem;
+  }
 }
 
 /* Media Query - small desktops and medias with min with 1152px */
@@ -1953,6 +1965,24 @@ MEDIA QUERIES
     height: 4.125rem;
     margin-top: 5rem;
     margin-right: 2rem;
+  }
+
+  .traveler .owl-carousel .owl-nav button.owl-next {
+    margin-right: 2rem;
+  }
+
+  .traveler .owl-carousel .owl-nav button.owl-prev {
+    margin-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1152px) and (max-width: 1439px) {
+  .traveler .owl-carousel .owl-nav button.owl-next {
+    margin-right: 6.5rem;
+  }
+
+  .traveler .owl-carousel .owl-nav button.owl-prev {
+    margin-right: 2.5rem;
   }
 }
 
@@ -2207,8 +2237,8 @@ footer .footer-col ul li a:hover {
 /* Start of Newsletter styling */
 footer .newsletter {
   position: relative;
+  top: 3.5rem;
   bottom: -9rem;
-
   background-color: var(--white);
   width: 80rem;
   height: 14rem;
@@ -2562,6 +2592,7 @@ footer .newsletter form button:hover {
     width: 100%;
     height: 20.25rem;
     padding: 2.75rem;
+    top: -2rem;
   }
 
   footer .container-newsletter {
@@ -2767,6 +2798,7 @@ footer .newsletter form button:hover {
     max-width: 100%;
     height: 28.9375rem;
     margin-top: 7rem;
+    top: 0;
   }
 
   footer .container-newsletter {
