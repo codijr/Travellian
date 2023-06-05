@@ -124,6 +124,16 @@
   }
 }
 
+@media (min-width: 360px) and (max-width:374px){
+  .destination-gallery .owl-carousel .owl-nav button.owl-prev {
+    left: 31%;
+  }
+
+  .destination-gallery .owl-carousel .owl-nav button.owl-next {
+    right: 31%;
+  }
+}
+
 @media (min-width: 425px) {
   .destination-gallery .owl-carousel .owl-nav button.owl-prev {
     left: 34%;

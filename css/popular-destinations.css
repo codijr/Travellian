@@ -282,3 +282,15 @@
       top: 37rem;
     }
   }
+
+  @media (min-width: 360px) and (max-width:374px){
+    #popular-destinations .owl-carousel .owl-nav button.owl-prev {
+      left: 9rem;
+      top: 37rem;
+    }
+  
+    #popular-destinations .owl-carousel .owl-nav button.owl-next {
+      left: 16.5rem;
+      top: 37rem;
+    }
+  }
