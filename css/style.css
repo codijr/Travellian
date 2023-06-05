@@ -522,7 +522,7 @@ MEDIA QUERIES
 
 #popular-destinations #content-popular-destinations > p {
   font-family: var(--defaut-font);
-  font-size: 24px;
+  font-size: 20px;
   color: var(--gray-300);
 }
 
@@ -607,6 +607,18 @@ MEDIA QUERIES
   #popular-destinations .owl-carousel .owl-nav button.owl-next {
     left: 130rem;
     top: -14rem;
+  }
+}
+
+@media (min-width:1301px) and (max-width: 1439px) {
+  #popular-destinations .owl-carousel .owl-nav button.owl-prev {
+    left: 108rem;
+    top: -18rem;
+  }
+
+  #popular-destinations .owl-carousel .owl-nav button.owl-next {
+    left: 116rem;
+    top: -18rem;
   }
 }
 
@@ -699,12 +711,12 @@ MEDIA QUERIES
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #popular-destinations .owl-carousel .owl-nav button.owl-prev {
-    left: 28rem;
+    left: 29rem;
     top: 50rem;
   }
 
   #popular-destinations .owl-carousel .owl-nav button.owl-next {
-    left: 36rem;
+    left: 37rem;
     top: 50rem;
   }
 }
@@ -1472,7 +1484,7 @@ MEDIA QUERIES
   }
 }
 
-/* Start of Trip Planners Section Styling */
+/* Start of Destination Gallery Section Styling */
 
 .destination-gallery {
   display: flex;
@@ -1488,7 +1500,7 @@ MEDIA QUERIES
 }
 
 .destination-gallery .info hr {
-  border: 2px solid var(--orange-500);
+  border: 1px solid var(--orange-500);
   margin: 20px 0 32px;
   opacity: 100%;
   width: 282px;
@@ -1496,8 +1508,9 @@ MEDIA QUERIES
 
 .destination-gallery .info p {
   color: var(--gray-300);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 21px;
+  font-family: var(--defaut-font);
 }
 
 .destination-gallery ul {
@@ -1528,13 +1541,13 @@ MEDIA QUERIES
 .destination-gallery .owl-carousel .owl-nav button.owl-prev {
   background-color: var(--blue-900);
   color: var(--white);
-  left: 25%;
+  left: 35%;
 }
 
 .destination-gallery .owl-carousel .owl-nav button.owl-next {
   background-color: var(--orange-500);
   color: var(--white);
-  right: 25%;
+  right: 35%;
 }
 
 .destination-gallery .owl-carousel .owl-nav button.owl-prev:hover {
@@ -1559,7 +1572,37 @@ MEDIA QUERIES
   width: 100%;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 320px) {
+  .destination-gallery .owl-carousel .owl-nav button.owl-prev {
+    left: 32%;
+  }
+
+  .destination-gallery .owl-carousel .owl-nav button.owl-next {
+    right: 22%;
+  }
+}
+
+@media (min-width: 375px) {
+  .destination-gallery .owl-carousel .owl-nav button.owl-prev {
+    left: 32%;
+  }
+
+  .destination-gallery .owl-carousel .owl-nav button.owl-next {
+    right: 28%;
+  }
+}
+
+@media (min-width: 425px) {
+  .destination-gallery .owl-carousel .owl-nav button.owl-prev {
+    left: 33%;
+  }
+
+  .destination-gallery .owl-carousel .owl-nav button.owl-next {
+    right: 32%;
+  }
+}
+
+@media (min-width: 768px) {
   .destination-gallery {
     padding: 80px 20px 160px;
   }
@@ -1573,11 +1616,25 @@ MEDIA QUERIES
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-prev {
-    left: 35%;
+    left: 40%;
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-next {
-    right: 35%;
+    right: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .destination-gallery .owl-carousel .owl-nav button.owl-prev {
+    left: auto;
+    right:100px;
+    top: -160px;
+  }
+
+  .destination-gallery .owl-carousel .owl-nav button.owl-next {
+    left: auto;
+    right: 18px;
+    top: -160px;
   }
 }
 
@@ -1597,12 +1654,12 @@ MEDIA QUERIES
 
   .destination-gallery .owl-carousel .owl-nav button.owl-prev {
     left: auto;
-    right: 96px;
+    right: 135px;
   }
 
   .destination-gallery .owl-carousel .owl-nav button.owl-next {
     left: auto;
-    right: 0;
+    right: 53px;
   }
 
   .destination-gallery ul {
